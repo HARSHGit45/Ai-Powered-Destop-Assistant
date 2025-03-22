@@ -1,0 +1,2388 @@
+{
+  "C:\\Users\\Harshal": {
+    "Desktop": {
+      "dirs": [],
+      "files": [
+        "report.docx"
+      ]
+    },
+    "Documents": {
+      "dirs": [
+        "BabelWorkspaceBackups",
+        "employee_App",
+        "My Music",
+        "My Pictures",
+        "My Videos",
+        "Projects"
+      ],
+      "files": [
+        "!qhlogs.doc",
+        "629349363-II-Sem-9th-Std-Marathi-Paper[1].pdf",
+        "6th I Sum 2023-2024.xlsx",
+        "ank.docx",
+        "asn4.docx",
+        "ASSIGNMENT NO 2.docx",
+        "btsfdl.docx",
+        "cisco.pdf",
+        "coverletter.pdf",
+        "cv1.docx",
+        "FA 1.docx",
+        "Golden Bell English Medium School.docx",
+        "graphs.docx",
+        "Harshal Sadanand Mal1.docx",
+        "harshal sadanand mali.docx",
+        "INTERNAL EVALUTION 1.docx",
+        "INTERNAL EVALUTION 1.pdf",
+        "MARIYUM ENGLISH MEDIUM SCHOOL AND JR.docx",
+        "mongo.docx",
+        "nepXInduction Ir.docx",
+        "Practical no 5.docx",
+        "r.docx",
+        "Recommended Server Configuration.docx",
+        "rg.pdf",
+        "scientist.docx",
+        "Simple LAN connection with 4 pcs with same class ip address.docx",
+        "sruj.docx",
+        "Stall theme.docx",
+        "~$mongo.docx",
+        "\u092e\u094b\u0939\u0928\u0926\u093e\u0938 \u0915\u0930\u092e\u091a\u0902\u0926 \u0917\u093e\u0902\u0927\u0940.docx"
+      ]
+    },
+    "Documents\\BabelWorkspaceBackups": {
+      "dirs": [],
+      "files": [
+        "babel-2024-11-09.backup.zip"
+      ]
+    },
+    "Documents\\employee_App": {
+      "dirs": [],
+      "files": [
+        "bg.jpg",
+        "glimpses of the past.pdf",
+        "hemh105.pdf",
+        "index.html",
+        "ls no 6.pdf",
+        "pccoe.jpeg",
+        "script.js"
+      ]
+    },
+    "Documents\\Projects": {
+      "dirs": [],
+      "files": [
+        "ascci.cpp",
+        "employeeDatabase.dat",
+        "first.exe",
+        "NewFile.cpp",
+        "NewFile1.exe",
+        "NewFile2.cpp",
+        "NewFile2.exe",
+        "NewFile3.exe",
+        "NewFile4.exe",
+        "NewFile5.exe",
+        "scores.txt",
+        "stock_data.txt"
+      ]
+    },
+    "Downloads": {
+      "dirs": [
+        "craters",
+        "data",
+        "gfg",
+        "Harshal",
+        "ngrok-v3-stable-windows-amd64",
+        "windows_11_cursors_concept_v2_by_jepricreations_densjkc",
+        "__MACOSX"
+      ],
+      "files": [
+        "!qhlogs.doc",
+        "1000091419.jpg",
+        "390.HEIC",
+        "390.jpg",
+        "68747470733a2f2f73332d6832732d76322e73332e61702d736f7574682d312e616d617a6f6e6177732e636f6d2f323032342d30342d3233543037253341323725334133362e3534325a2d62616e6e65722e706e67.png",
+        "881059144971390_signed.pdf",
+        "aiml_eduskill.pdf",
+        "ai_info.jpg",
+        "archive.zip",
+        "ARTIMAS.png",
+        "Attendance Report Civil Department.xlsx",
+        "Attendance Report Computer Department.xlsx",
+        "bhud.jpg",
+        "Cervical_Cancer_shape_analysis (1).ipynb",
+        "Cervical_Cancer_shape_analysis.ipynb",
+        "cervical_cell_features.xls",
+        "ChromeSetup.exe",
+        "colin.jpg",
+        "Course_Certificate.pdf",
+        "curr.pdf",
+        "declr.pdf",
+        "desktop.ini",
+        "DSA.jpg",
+        "Dummy_Attendance Report.xlsx",
+        "EduPlusCampus.pdf",
+        "Falcon C++-3.3.0.0-Setup.exe",
+        "fees.pdf",
+        "GetDocumentList.pdf",
+        "Git-2.45.2-64-bit.exe",
+        "Gryffindor.png",
+        "Gryffindor.webp",
+        "Harshal Sadanand Mali - Resume.pdf",
+        "harshal sadanand mali.pdf",
+        "Harshal(CV).pdf",
+        "Harshal(CV)2.pdf",
+        "Harshal(CV)Tr.pdf",
+        "HDFC Data.zip",
+        "hod.jpg",
+        "IMG20241025142802.jpg",
+        "IMG_1525.JPG",
+        "index.pdf",
+        "keys.pdf",
+        "logo.png",
+        "MEETUP.jpg",
+        "mom_resume-1[1].pdf",
+        "mysql-installer-community-8.0.36.0.msi",
+        "Network Security Fundamentals _ Beacon.pdf",
+        "new_database_results.csv",
+        "ngrok-v3-stable-windows-amd64.zip",
+        "node-v20.14.0-x64.msi",
+        "notes.py",
+        "Postman-win64-Setup.exe",
+        "PXL_20241115_135445596.jpg",
+        "python-3.11.5-amd64.exe",
+        "RESULT.pdf",
+        "RESUME(ORIGNAL).pdf",
+        "road.pdf",
+        "rs1.pdf",
+        "School Education and Sports Department.pdf",
+        "sem1.pdf",
+        "sr.pdf",
+        "ssc.pdf",
+        "VSCodeUserSetup-x64-1.82.0.exe",
+        "xampp-windows-x64-8.0.30-0-VS16-installer.exe"
+      ]
+    },
+    "Downloads\\craters": {
+      "dirs": [
+        "craters"
+      ],
+      "files": [
+        "best.pt"
+      ]
+    },
+    "Downloads\\craters\\craters": {
+      "dirs": [
+        "test",
+        "train",
+        "valid"
+      ],
+      "files": []
+    },
+    "Downloads\\craters\\craters\\test": {
+      "dirs": [
+        "images",
+        "labels"
+      ],
+      "files": []
+    },
+    "Downloads\\craters\\craters\\test\\images": {
+      "dirs": [],
+      "files": [
+        "010_png.rf.fcf5e274562ee69a325f9d7a0b30767f.jpg",
+        "015_png.rf.7d5b2091b6339c9480a171a59c52c3b9.jpg",
+        "019_png.rf.1930cd277f9bf0e3fa57f2dcfee0385f.jpg",
+        "04_png.rf.81a7d6cbeb9dc09e5a8ecd40e185fc92.jpg",
+        "mars_crater--100-_jpg.rf.a2ad5867efb2d73e86d9d980ca40a9fe.jpg",
+        "mars_crater--108-_jpg.rf.9395f473f249e064dbfea078e2519a17.jpg",
+        "mars_crater--116-_jpg.rf.2e550a693a8800808e68848484716b95.jpg",
+        "mars_crater--117-_jpg.rf.b412b6593d102c5f9dda7bce79bb815c.jpg",
+        "mars_crater--12-_jpg.rf.26060e7ca4ca8781bcaf011b9b70b7db.jpg",
+        "mars_crater--25-_jpg.rf.a06bfa24b404b064ead471f56d636e0e.jpg",
+        "mars_crater--31-_jpg.rf.5030dfd316db1570d5f2ad396fa87d4d.jpg",
+        "mars_crater--32-_jpg.rf.2f0302a2f32a7b05f5c55e3dac97f1ea.jpg",
+        "mars_crater--33-_jpg.rf.baf9c7be01ba1f4b954e0e5be0560c80.jpg",
+        "mars_crater--46-_jpg.rf.369e88a43859f97a595d2091746600f4.jpg",
+        "mars_crater--51-_jpg.rf.2f21cd1782f9da8bb8f1ada8efa134a7.jpg",
+        "mars_crater--60-_jpg.rf.df89b1f82e171f73f5402c29b6637aa8.jpg",
+        "mars_crater--65-_jpg.rf.34ab64f1f6ce5a4b360ea66eae77d4b9.jpg",
+        "mars_crater--66-_jpg.rf.85564f58f27e684c94c8a0e484cc289e.jpg",
+        "mars_crater--97-_jpg.rf.63347c2ec963cf5c4ab641e1ba872df1.jpg"
+      ]
+    },
+    "Downloads\\craters\\craters\\test\\labels": {
+      "dirs": [],
+      "files": [
+        "010_png.rf.fcf5e274562ee69a325f9d7a0b30767f.txt",
+        "015_png.rf.7d5b2091b6339c9480a171a59c52c3b9.txt",
+        "019_png.rf.1930cd277f9bf0e3fa57f2dcfee0385f.txt",
+        "04_png.rf.81a7d6cbeb9dc09e5a8ecd40e185fc92.txt",
+        "mars_crater--100-_jpg.rf.a2ad5867efb2d73e86d9d980ca40a9fe.txt",
+        "mars_crater--108-_jpg.rf.9395f473f249e064dbfea078e2519a17.txt",
+        "mars_crater--116-_jpg.rf.2e550a693a8800808e68848484716b95.txt",
+        "mars_crater--117-_jpg.rf.b412b6593d102c5f9dda7bce79bb815c.txt",
+        "mars_crater--12-_jpg.rf.26060e7ca4ca8781bcaf011b9b70b7db.txt",
+        "mars_crater--25-_jpg.rf.a06bfa24b404b064ead471f56d636e0e.txt",
+        "mars_crater--31-_jpg.rf.5030dfd316db1570d5f2ad396fa87d4d.txt",
+        "mars_crater--32-_jpg.rf.2f0302a2f32a7b05f5c55e3dac97f1ea.txt",
+        "mars_crater--33-_jpg.rf.baf9c7be01ba1f4b954e0e5be0560c80.txt",
+        "mars_crater--46-_jpg.rf.369e88a43859f97a595d2091746600f4.txt",
+        "mars_crater--51-_jpg.rf.2f21cd1782f9da8bb8f1ada8efa134a7.txt",
+        "mars_crater--60-_jpg.rf.df89b1f82e171f73f5402c29b6637aa8.txt",
+        "mars_crater--65-_jpg.rf.34ab64f1f6ce5a4b360ea66eae77d4b9.txt",
+        "mars_crater--66-_jpg.rf.85564f58f27e684c94c8a0e484cc289e.txt",
+        "mars_crater--97-_jpg.rf.63347c2ec963cf5c4ab641e1ba872df1.txt"
+      ]
+    },
+    "Downloads\\craters\\craters\\train": {
+      "dirs": [
+        "images",
+        "labels"
+      ],
+      "files": []
+    },
+    "Downloads\\craters\\craters\\train\\images": {
+      "dirs": [],
+      "files": [
+        "011_png.rf.8ac312b4898f0106d10b76952a55d237.jpg",
+        "012_png.rf.64da6ff4c62638096ee6e5bf689706bc.jpg",
+        "013_png.rf.ee44d5aa33fd33a1ed62ae233180f505.jpg",
+        "016_png.rf.1973f9540ae7f672257609a8e5721ab3.jpg",
+        "017_png.rf.1504c0d3ecbf20af6bc5114ca197a0dd.jpg",
+        "018_png.rf.2d4eed5581681fe83830e51634befdaf.jpg",
+        "01_png.rf.4d2ebc5ed98ad1e69d667aadbce63d53.jpg",
+        "020_png.rf.ce87f4889d7441275135633392f98ed7.jpg",
+        "022_png.rf.00ae4e655a2774bada1e254641482935.jpg",
+        "02_png.rf.610687947e4c92f77e6462104ec4b924.jpg",
+        "03_png.rf.8f7b31e14642026833b7c0dcd1832862.jpg",
+        "05_png.rf.844343145246e51e66a345419e1862bf.jpg",
+        "06_png.rf.aaf8c66b9e4d5e99a3dc70bae7f62c07.jpg",
+        "07_png.rf.3fba5e95c6827aa6c4132e70f2086555.jpg",
+        "08_png.rf.944efdd0f108140b368d7ad2c37426df.jpg",
+        "09_png.rf.3b796e77a5f0036af4cd4413fcbe07a5.jpg",
+        "mars_crater--0-_jpg.rf.40c1dec94c66ab07d9da8c74fa58d6f8.jpg",
+        "mars_crater--10-_jpg.rf.585b1aa305997e3055e86fcac72a806b.jpg",
+        "mars_crater--101-_jpg.rf.8f4eb1c77ab9e64d2fd691a6e0fcd3ec.jpg",
+        "mars_crater--102-_jpg.rf.9cdbcc724e2e7baf5c5c17aed91c769b.jpg",
+        "mars_crater--103-_jpg.rf.61597458910fb0eed55b415c9cbac3bf.jpg",
+        "mars_crater--105-_jpg.rf.338dccc756e50430460dfb6f6191d1c5.jpg",
+        "mars_crater--106-_jpg.rf.05aa3dbbbdc9651cb8c51d26c2847805.jpg",
+        "mars_crater--109-_jpg.rf.29afc1137114a2b872f484326254e949.jpg",
+        "mars_crater--11-_jpg.rf.9e8de286e3d84938f34bb6bf35825343.jpg",
+        "mars_crater--110-_jpg.rf.593f6a3d9aed98e7a08955e700765222.jpg",
+        "mars_crater--111-_jpg.rf.215f88d6bd7a6d86560754be694fc2f3.jpg",
+        "mars_crater--113-_jpg.rf.a7713d55de03a1a7487429d414e1005c.jpg",
+        "mars_crater--118-_jpg.rf.0a8b3fb0e1332e576901e596ad55e30a.jpg",
+        "mars_crater--119-_jpg.rf.5cd500a3dcc977038a875b5115f9eda4.jpg",
+        "mars_crater--120-_jpg.rf.a870131b0b5974e8351a32ade2d5f0f3.jpg",
+        "mars_crater--14-_jpg.rf.e050bff73578e2a9ad30e339b898f839.jpg",
+        "mars_crater--15-_jpg.rf.c669035a909b835be84fa4fc67bf3f40.jpg",
+        "mars_crater--16-_jpg.rf.bf5f6796b4ec5d351b47efae2e866934.jpg",
+        "mars_crater--17-_jpg.rf.c051d4c804f2fed2aa32999cc9fd0b48.jpg",
+        "mars_crater--18-_jpg.rf.8214037c811619bbe37024a557c9251f.jpg",
+        "mars_crater--19-_jpg.rf.a9e7485a270816a553c3d7e0c3fddd30.jpg",
+        "mars_crater--2-_jpg.rf.a65bb7ee68968509ac0b28df75e1f251.jpg",
+        "mars_crater--20-_jpg.rf.cb4c2603f4a62bbe96328c29cec6d68e.jpg",
+        "mars_crater--21-_jpg.rf.63688e718106a9b061bb702a298e7a54.jpg",
+        "mars_crater--22-_jpg.rf.3ed23daa3923c22a459593cb449a7336.jpg",
+        "mars_crater--24-_jpg.rf.4614bb6844fda70ea8a3b4f515cb7e8f.jpg",
+        "mars_crater--26-_jpg.rf.e34074ddcd6c44fa17b7a7689f7ddfa4.jpg",
+        "mars_crater--27-_jpg.rf.158fc0c6a694bba2f0afa44fd76a7f5a.jpg",
+        "mars_crater--3-_jpg.rf.17bb27df5c5e6a501f790342675bc145.jpg",
+        "mars_crater--30-_jpg.rf.0fb68bf5aece1859bc5f080e66b4fef1.jpg",
+        "mars_crater--34-_jpg.rf.5617051b3d6a801330f8d4f7df9e3239.jpg",
+        "mars_crater--35-_jpg.rf.826bc4b2a3a69c48144834f40d92439f.jpg",
+        "mars_crater--36-_jpg.rf.0100a780ad4217b29c2dc9b46deec040.jpg",
+        "mars_crater--37-_jpg.rf.c2a35d9de333416eb4d6d8f0d6b3310a.jpg",
+        "mars_crater--38-_jpg.rf.e6f3636efb075ba61dafa478e6b21de2.jpg",
+        "mars_crater--39-_jpg.rf.dbcaca888781a42f7bb3ce2c922da228.jpg",
+        "mars_crater--4-_jpg.rf.b31f215c27d917bdb7c7c545db2bc36b.jpg",
+        "mars_crater--41-_jpg.rf.5b367c681ccf0dfa9c5fddf287926d83.jpg",
+        "mars_crater--42-_jpg.rf.0cea1f9d9cf45fb141abf4e9aaae4c84.jpg",
+        "mars_crater--43-_jpg.rf.27ea7a65603205e491bc439c1d654cf4.jpg",
+        "mars_crater--44-_jpg.rf.627a604f51a4479d1f1660c5cf2af5c4.jpg",
+        "mars_crater--45-_jpg.rf.d69fa5e159ad8e5fe17b96deaba99c18.jpg",
+        "mars_crater--48-_jpg.rf.cc5528a8dcf4a11085a0a01d5c9084bc.jpg",
+        "mars_crater--49-_jpg.rf.5ea4703986c80bcfa03f0f99e4067c6f.jpg",
+        "mars_crater--5-_jpg.rf.6acb650edc64d6e1a02a0eef00e95113.jpg",
+        "mars_crater--50-_jpg.rf.02be16d199897982df8e6ea8f3e5818f.jpg",
+        "mars_crater--52-_jpg.rf.1a227f21c518775052f847053022cd86.jpg",
+        "mars_crater--53-_jpg.rf.20acc76fad4fecd456d4b0e77c9bbbb1.jpg",
+        "mars_crater--54-_jpg.rf.2313c9f439999313bfb527534bbdc501.jpg",
+        "mars_crater--55-_jpg.rf.452ea46e23156b2c86433eb9054b1a6a.jpg",
+        "mars_crater--56-_jpg.rf.6f0dcbff4ea66014aef178b840d29238.jpg",
+        "mars_crater--57-_jpg.rf.a783aaeaf00ae5d57bec64438050285f.jpg",
+        "mars_crater--58-_jpg.rf.d668b2f63bd183cb629754db3ff6cf1f.jpg",
+        "mars_crater--59-_jpg.rf.4f609e19d4f7f9987f696183edd87e99.jpg",
+        "mars_crater--6-_jpg.rf.ebff635e74e807f0377c656009482d1c.jpg",
+        "mars_crater--61-_jpg.rf.1398b749af6c18cf177cc97396129bd0.jpg",
+        "mars_crater--62-_jpg.rf.18dd7779b62fb78d5f07060fec32079d.jpg",
+        "mars_crater--68-_jpg.rf.e503921bd751aed3cfd662cda03ab6b6.jpg",
+        "mars_crater--69-_jpg.rf.8677e1c58b60bd19c197032d3e749cda.jpg",
+        "mars_crater--7-_jpg.rf.84b2a78c125aa0230712626eb381a2b4.jpg",
+        "mars_crater--70-_jpg.rf.30c918cda3fcb18a9ff9ce047e0a93a0.jpg",
+        "mars_crater--71-_jpg.rf.3370d6bdc02cbe6643f7509228f2ee10.jpg",
+        "mars_crater--74-_jpg.rf.259a2b0955c98b2b468d63917ae13796.jpg",
+        "mars_crater--75-_jpg.rf.210df1cf8ebc1b962b63621720ecf926.jpg",
+        "mars_crater--76-_jpg.rf.050c14a337ce70de3519fe6049640831.jpg",
+        "mars_crater--77-_jpg.rf.64732a16676a6c3222f67571cf1d6618.jpg",
+        "mars_crater--78-_jpg.rf.d960fe84ae55c6b91be086d8e8a8ed32.jpg",
+        "mars_crater--8-_jpg.rf.85af0fa193ad2d5b0087dc48ec7341c6.jpg",
+        "mars_crater--80-_jpg.rf.55cff0d5b6e2587b15ba97e5f6a3a5f5.jpg",
+        "mars_crater--81-_jpg.rf.147703ba93a36a6a753992752f0a1789.jpg",
+        "mars_crater--82-_jpg.rf.c3ba3759df63259b6ba3df175475d3ce.jpg",
+        "mars_crater--83-_jpg.rf.3a468d2f7715d1cf73d5a31d385e0c34.jpg",
+        "mars_crater--84-_jpg.rf.dcfe6c285ac885441a1c95d818b188e1.jpg",
+        "mars_crater--85-_jpg.rf.344998b46a84deb2b8802cdae98c5282.jpg",
+        "mars_crater--86-_jpg.rf.81699898067809e7560109fb72a56670.jpg",
+        "mars_crater--87-_jpg.rf.649d603d5617ce66e4a9420539fbfebb.jpg",
+        "mars_crater--88-_jpg.rf.2f3b851dec48a94bfccc6519b4a45859.jpg",
+        "mars_crater--9-_jpg.rf.64378015a647ef92689e24ea103644cd.jpg",
+        "mars_crater--93-_jpg.rf.7426ac666cec74a8b0bc15d550b8699b.jpg",
+        "mars_crater--94-_jpg.rf.a1d59711147871b0498b03c2042c7b56.jpg",
+        "mars_crater--96-_jpg.rf.6dca8e5264f81785f8d718f92f9e4475.jpg",
+        "mars_crater--99-_jpg.rf.09682f4dbe2f52ffe890061454306153.jpg"
+      ]
+    },
+    "Downloads\\craters\\craters\\train\\labels": {
+      "dirs": [],
+      "files": [
+        "011_png.rf.8ac312b4898f0106d10b76952a55d237.txt",
+        "012_png.rf.64da6ff4c62638096ee6e5bf689706bc.txt",
+        "013_png.rf.ee44d5aa33fd33a1ed62ae233180f505.txt",
+        "016_png.rf.1973f9540ae7f672257609a8e5721ab3.txt",
+        "017_png.rf.1504c0d3ecbf20af6bc5114ca197a0dd.txt",
+        "018_png.rf.2d4eed5581681fe83830e51634befdaf.txt",
+        "01_png.rf.4d2ebc5ed98ad1e69d667aadbce63d53.txt",
+        "020_png.rf.ce87f4889d7441275135633392f98ed7.txt",
+        "022_png.rf.00ae4e655a2774bada1e254641482935.txt",
+        "02_png.rf.610687947e4c92f77e6462104ec4b924.txt",
+        "03_png.rf.8f7b31e14642026833b7c0dcd1832862.txt",
+        "05_png.rf.844343145246e51e66a345419e1862bf.txt",
+        "06_png.rf.aaf8c66b9e4d5e99a3dc70bae7f62c07.txt",
+        "07_png.rf.3fba5e95c6827aa6c4132e70f2086555.txt",
+        "08_png.rf.944efdd0f108140b368d7ad2c37426df.txt",
+        "09_png.rf.3b796e77a5f0036af4cd4413fcbe07a5.txt",
+        "mars_crater--0-_jpg.rf.40c1dec94c66ab07d9da8c74fa58d6f8.txt",
+        "mars_crater--10-_jpg.rf.585b1aa305997e3055e86fcac72a806b.txt",
+        "mars_crater--101-_jpg.rf.8f4eb1c77ab9e64d2fd691a6e0fcd3ec.txt",
+        "mars_crater--102-_jpg.rf.9cdbcc724e2e7baf5c5c17aed91c769b.txt",
+        "mars_crater--103-_jpg.rf.61597458910fb0eed55b415c9cbac3bf.txt",
+        "mars_crater--105-_jpg.rf.338dccc756e50430460dfb6f6191d1c5.txt",
+        "mars_crater--106-_jpg.rf.05aa3dbbbdc9651cb8c51d26c2847805.txt",
+        "mars_crater--109-_jpg.rf.29afc1137114a2b872f484326254e949.txt",
+        "mars_crater--11-_jpg.rf.9e8de286e3d84938f34bb6bf35825343.txt",
+        "mars_crater--110-_jpg.rf.593f6a3d9aed98e7a08955e700765222.txt",
+        "mars_crater--111-_jpg.rf.215f88d6bd7a6d86560754be694fc2f3.txt",
+        "mars_crater--113-_jpg.rf.a7713d55de03a1a7487429d414e1005c.txt",
+        "mars_crater--118-_jpg.rf.0a8b3fb0e1332e576901e596ad55e30a.txt",
+        "mars_crater--119-_jpg.rf.5cd500a3dcc977038a875b5115f9eda4.txt",
+        "mars_crater--120-_jpg.rf.a870131b0b5974e8351a32ade2d5f0f3.txt",
+        "mars_crater--14-_jpg.rf.e050bff73578e2a9ad30e339b898f839.txt",
+        "mars_crater--15-_jpg.rf.c669035a909b835be84fa4fc67bf3f40.txt",
+        "mars_crater--16-_jpg.rf.bf5f6796b4ec5d351b47efae2e866934.txt",
+        "mars_crater--17-_jpg.rf.c051d4c804f2fed2aa32999cc9fd0b48.txt",
+        "mars_crater--18-_jpg.rf.8214037c811619bbe37024a557c9251f.txt",
+        "mars_crater--19-_jpg.rf.a9e7485a270816a553c3d7e0c3fddd30.txt",
+        "mars_crater--2-_jpg.rf.a65bb7ee68968509ac0b28df75e1f251.txt",
+        "mars_crater--20-_jpg.rf.cb4c2603f4a62bbe96328c29cec6d68e.txt",
+        "mars_crater--21-_jpg.rf.63688e718106a9b061bb702a298e7a54.txt",
+        "mars_crater--22-_jpg.rf.3ed23daa3923c22a459593cb449a7336.txt",
+        "mars_crater--24-_jpg.rf.4614bb6844fda70ea8a3b4f515cb7e8f.txt",
+        "mars_crater--26-_jpg.rf.e34074ddcd6c44fa17b7a7689f7ddfa4.txt",
+        "mars_crater--27-_jpg.rf.158fc0c6a694bba2f0afa44fd76a7f5a.txt",
+        "mars_crater--3-_jpg.rf.17bb27df5c5e6a501f790342675bc145.txt",
+        "mars_crater--30-_jpg.rf.0fb68bf5aece1859bc5f080e66b4fef1.txt",
+        "mars_crater--34-_jpg.rf.5617051b3d6a801330f8d4f7df9e3239.txt",
+        "mars_crater--35-_jpg.rf.826bc4b2a3a69c48144834f40d92439f.txt",
+        "mars_crater--36-_jpg.rf.0100a780ad4217b29c2dc9b46deec040.txt",
+        "mars_crater--37-_jpg.rf.c2a35d9de333416eb4d6d8f0d6b3310a.txt",
+        "mars_crater--38-_jpg.rf.e6f3636efb075ba61dafa478e6b21de2.txt",
+        "mars_crater--39-_jpg.rf.dbcaca888781a42f7bb3ce2c922da228.txt",
+        "mars_crater--4-_jpg.rf.b31f215c27d917bdb7c7c545db2bc36b.txt",
+        "mars_crater--41-_jpg.rf.5b367c681ccf0dfa9c5fddf287926d83.txt",
+        "mars_crater--42-_jpg.rf.0cea1f9d9cf45fb141abf4e9aaae4c84.txt",
+        "mars_crater--43-_jpg.rf.27ea7a65603205e491bc439c1d654cf4.txt",
+        "mars_crater--44-_jpg.rf.627a604f51a4479d1f1660c5cf2af5c4.txt",
+        "mars_crater--45-_jpg.rf.d69fa5e159ad8e5fe17b96deaba99c18.txt",
+        "mars_crater--48-_jpg.rf.cc5528a8dcf4a11085a0a01d5c9084bc.txt",
+        "mars_crater--49-_jpg.rf.5ea4703986c80bcfa03f0f99e4067c6f.txt",
+        "mars_crater--5-_jpg.rf.6acb650edc64d6e1a02a0eef00e95113.txt",
+        "mars_crater--50-_jpg.rf.02be16d199897982df8e6ea8f3e5818f.txt",
+        "mars_crater--52-_jpg.rf.1a227f21c518775052f847053022cd86.txt",
+        "mars_crater--53-_jpg.rf.20acc76fad4fecd456d4b0e77c9bbbb1.txt",
+        "mars_crater--54-_jpg.rf.2313c9f439999313bfb527534bbdc501.txt",
+        "mars_crater--55-_jpg.rf.452ea46e23156b2c86433eb9054b1a6a.txt",
+        "mars_crater--56-_jpg.rf.6f0dcbff4ea66014aef178b840d29238.txt",
+        "mars_crater--57-_jpg.rf.a783aaeaf00ae5d57bec64438050285f.txt",
+        "mars_crater--58-_jpg.rf.d668b2f63bd183cb629754db3ff6cf1f.txt",
+        "mars_crater--59-_jpg.rf.4f609e19d4f7f9987f696183edd87e99.txt",
+        "mars_crater--6-_jpg.rf.ebff635e74e807f0377c656009482d1c.txt",
+        "mars_crater--61-_jpg.rf.1398b749af6c18cf177cc97396129bd0.txt",
+        "mars_crater--62-_jpg.rf.18dd7779b62fb78d5f07060fec32079d.txt",
+        "mars_crater--68-_jpg.rf.e503921bd751aed3cfd662cda03ab6b6.txt",
+        "mars_crater--69-_jpg.rf.8677e1c58b60bd19c197032d3e749cda.txt",
+        "mars_crater--7-_jpg.rf.84b2a78c125aa0230712626eb381a2b4.txt",
+        "mars_crater--70-_jpg.rf.30c918cda3fcb18a9ff9ce047e0a93a0.txt",
+        "mars_crater--71-_jpg.rf.3370d6bdc02cbe6643f7509228f2ee10.txt",
+        "mars_crater--74-_jpg.rf.259a2b0955c98b2b468d63917ae13796.txt",
+        "mars_crater--75-_jpg.rf.210df1cf8ebc1b962b63621720ecf926.txt",
+        "mars_crater--76-_jpg.rf.050c14a337ce70de3519fe6049640831.txt",
+        "mars_crater--77-_jpg.rf.64732a16676a6c3222f67571cf1d6618.txt",
+        "mars_crater--78-_jpg.rf.d960fe84ae55c6b91be086d8e8a8ed32.txt",
+        "mars_crater--8-_jpg.rf.85af0fa193ad2d5b0087dc48ec7341c6.txt",
+        "mars_crater--80-_jpg.rf.55cff0d5b6e2587b15ba97e5f6a3a5f5.txt",
+        "mars_crater--81-_jpg.rf.147703ba93a36a6a753992752f0a1789.txt",
+        "mars_crater--82-_jpg.rf.c3ba3759df63259b6ba3df175475d3ce.txt",
+        "mars_crater--83-_jpg.rf.3a468d2f7715d1cf73d5a31d385e0c34.txt",
+        "mars_crater--84-_jpg.rf.dcfe6c285ac885441a1c95d818b188e1.txt",
+        "mars_crater--85-_jpg.rf.344998b46a84deb2b8802cdae98c5282.txt",
+        "mars_crater--86-_jpg.rf.81699898067809e7560109fb72a56670.txt",
+        "mars_crater--87-_jpg.rf.649d603d5617ce66e4a9420539fbfebb.txt",
+        "mars_crater--88-_jpg.rf.2f3b851dec48a94bfccc6519b4a45859.txt",
+        "mars_crater--9-_jpg.rf.64378015a647ef92689e24ea103644cd.txt",
+        "mars_crater--93-_jpg.rf.7426ac666cec74a8b0bc15d550b8699b.txt",
+        "mars_crater--94-_jpg.rf.a1d59711147871b0498b03c2042c7b56.txt",
+        "mars_crater--96-_jpg.rf.6dca8e5264f81785f8d718f92f9e4475.txt",
+        "mars_crater--99-_jpg.rf.09682f4dbe2f52ffe890061454306153.txt"
+      ]
+    },
+    "Downloads\\craters\\craters\\valid": {
+      "dirs": [
+        "images",
+        "labels"
+      ],
+      "files": []
+    },
+    "Downloads\\craters\\craters\\valid\\images": {
+      "dirs": [],
+      "files": [
+        "014_png.rf.6b86c8afeb3ebca92872fd966d076adc.jpg",
+        "021_png.rf.575e0f1cb87a2cc439172de15816c2cc.jpg",
+        "023_png.rf.0a3106bdcc8e64bba283f961db77c9ec.jpg",
+        "024_png.rf.be24000681f4f356e2a027fb7ca0c552.jpg",
+        "mars_crater--1-_png.rf.f1b399f95708fd0ce520f23c9944ed44.jpg",
+        "mars_crater--104-_jpg.rf.2ff6036b976ac6bbba612dd48f144d4d.jpg",
+        "mars_crater--107-_jpg.rf.eb0f7061ed8c8af8be0e8af6b97226b0.jpg",
+        "mars_crater--115-_jpg.rf.8b1bf8c37395c894e88e543ccb4cc42f.jpg",
+        "mars_crater--13-_jpg.rf.f6fc01f728dfec8b32ad59d696a1a08d.jpg",
+        "mars_crater--2-_png.rf.08b565c861e9ac03e3cd1f9b0a6cddbe.jpg",
+        "mars_crater--23-_jpg.rf.ab2b0f47006c0c17260c312215dcfb88.jpg",
+        "mars_crater--28-_jpg.rf.8a4c9991d6739123bd0cbf018ea6f50d.jpg",
+        "mars_crater--29-_jpg.rf.719ff6d6c1aafd71147c173f7d224018.jpg",
+        "mars_crater--40-_jpg.rf.29e123c14a95b2e0fcdc93e9e8cff902.jpg",
+        "mars_crater--47-_jpg.rf.63eed086b1d39dc52405a398229dc586.jpg",
+        "mars_crater--63-_jpg.rf.ab0440022651f886c68744a55eb215d9.jpg",
+        "mars_crater--64-_jpg.rf.fd0838698f86dd546cdfcfea987b98b2.jpg",
+        "mars_crater--67-_jpg.rf.cf856f9fde7eb10f7f1524ebb0024502.jpg",
+        "mars_crater--72-_jpg.rf.4e01fbde7746b57082310e11b1ff03e2.jpg",
+        "mars_crater--73-_jpg.rf.91d7dc2cc9ae2d5dee41207d8992c3b3.jpg",
+        "mars_crater--79-_jpg.rf.984de20cb547cf4ee0324ebbf3fb7a88.jpg",
+        "mars_crater--89-_jpg.rf.a57ed45379b066a537e1203ac9827a27.jpg",
+        "mars_crater--91-_jpg.rf.9203caee622cf671580b91536e36e7e2.jpg",
+        "mars_crater--92-_jpg.rf.608e45488b76786c69755a901c1b73c9.jpg",
+        "mars_crater--95-_jpg.rf.671f7041e41a37f7faec12f3e9eb1d7d.jpg",
+        "mars_crater--98-_jpg.rf.441572398e83f5d7769a8e57248c9248.jpg"
+      ]
+    },
+    "Downloads\\craters\\craters\\valid\\labels": {
+      "dirs": [],
+      "files": [
+        "014_png.rf.6b86c8afeb3ebca92872fd966d076adc.txt",
+        "021_png.rf.575e0f1cb87a2cc439172de15816c2cc.txt",
+        "023_png.rf.0a3106bdcc8e64bba283f961db77c9ec.txt",
+        "024_png.rf.be24000681f4f356e2a027fb7ca0c552.txt",
+        "mars_crater--1-_png.rf.f1b399f95708fd0ce520f23c9944ed44.txt",
+        "mars_crater--104-_jpg.rf.2ff6036b976ac6bbba612dd48f144d4d.txt",
+        "mars_crater--107-_jpg.rf.eb0f7061ed8c8af8be0e8af6b97226b0.txt",
+        "mars_crater--115-_jpg.rf.8b1bf8c37395c894e88e543ccb4cc42f.txt",
+        "mars_crater--13-_jpg.rf.f6fc01f728dfec8b32ad59d696a1a08d.txt",
+        "mars_crater--2-_png.rf.08b565c861e9ac03e3cd1f9b0a6cddbe.txt",
+        "mars_crater--23-_jpg.rf.ab2b0f47006c0c17260c312215dcfb88.txt",
+        "mars_crater--28-_jpg.rf.8a4c9991d6739123bd0cbf018ea6f50d.txt",
+        "mars_crater--29-_jpg.rf.719ff6d6c1aafd71147c173f7d224018.txt",
+        "mars_crater--40-_jpg.rf.29e123c14a95b2e0fcdc93e9e8cff902.txt",
+        "mars_crater--47-_jpg.rf.63eed086b1d39dc52405a398229dc586.txt",
+        "mars_crater--63-_jpg.rf.ab0440022651f886c68744a55eb215d9.txt",
+        "mars_crater--64-_jpg.rf.fd0838698f86dd546cdfcfea987b98b2.txt",
+        "mars_crater--67-_jpg.rf.cf856f9fde7eb10f7f1524ebb0024502.txt",
+        "mars_crater--72-_jpg.rf.4e01fbde7746b57082310e11b1ff03e2.txt",
+        "mars_crater--73-_jpg.rf.91d7dc2cc9ae2d5dee41207d8992c3b3.txt",
+        "mars_crater--79-_jpg.rf.984de20cb547cf4ee0324ebbf3fb7a88.txt",
+        "mars_crater--89-_jpg.rf.a57ed45379b066a537e1203ac9827a27.txt",
+        "mars_crater--91-_jpg.rf.9203caee622cf671580b91536e36e7e2.txt",
+        "mars_crater--92-_jpg.rf.608e45488b76786c69755a901c1b73c9.txt",
+        "mars_crater--95-_jpg.rf.671f7041e41a37f7faec12f3e9eb1d7d.txt",
+        "mars_crater--98-_jpg.rf.441572398e83f5d7769a8e57248c9248.txt"
+      ]
+    },
+    "Downloads\\data": {
+      "dirs": [
+        "__MACOSX"
+      ],
+      "files": []
+    },
+    "Downloads\\data\\__MACOSX": {
+      "dirs": [
+        "HDFC Data"
+      ],
+      "files": []
+    },
+    "Downloads\\data\\__MACOSX\\HDFC Data": {
+      "dirs": [],
+      "files": [
+        "._2021.pdf",
+        "._2023.pdf",
+        "._2024.pdf"
+      ]
+    },
+    "Downloads\\gfg": {
+      "dirs": [
+        "public",
+        "src"
+      ],
+      "files": [
+        "package-lock.json",
+        "package.json",
+        "postcss.config.js",
+        "README.md",
+        "tailwind.config.js"
+      ]
+    },
+    "Downloads\\gfg\\public": {
+      "dirs": [],
+      "files": [
+        "favicon.ico",
+        "index.html",
+        "logo192.png",
+        "logo512.png",
+        "manifest.json",
+        "robots.txt"
+      ]
+    },
+    "Downloads\\gfg\\src": {
+      "dirs": [],
+      "files": [
+        "App.js",
+        "index.css",
+        "index.js"
+      ]
+    },
+    "Downloads\\Harshal": {
+      "dirs": [
+        "Harshal"
+      ],
+      "files": []
+    },
+    "Downloads\\Harshal\\Harshal": {
+      "dirs": [],
+      "files": [
+        "Omkar Satardekar.png",
+        "Piyush Patil.png",
+        "Poonam Kadam.png",
+        "Prajyot Kale.png",
+        "Pranav Ukhade.png",
+        "Pratik Gadekar.png",
+        "Raj Patil.png",
+        "Roshani Kadam.png",
+        "Rutuja Chavan.png",
+        "Ruturaj Pandharkar.png",
+        "Sagar Ganeshkar.png",
+        "Sahil Bhadane.png",
+        "Samrudhi Divekar.png",
+        "Sanjana Biyani.png",
+        "Sarang Kadam.png"
+      ]
+    },
+    "Downloads\\ngrok-v3-stable-windows-amd64": {
+      "dirs": [],
+      "files": [
+        "ngrok.exe"
+      ]
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc": {
+      "dirs": [
+        "dark",
+        "light"
+      ],
+      "files": [
+        "DevianArt.url",
+        "How to install and more important info.txt",
+        "Ko-Fi.url",
+        "Preview.jpg"
+      ]
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc\\dark": {
+      "dirs": [
+        "alternatives",
+        "cursor"
+      ],
+      "files": []
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc\\dark\\alternatives": {
+      "dirs": [],
+      "files": [
+        "precision.cur"
+      ]
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc\\dark\\cursor": {
+      "dirs": [],
+      "files": [
+        "alternate.cur",
+        "beam.cur",
+        "busy.ani",
+        "dgn1.cur",
+        "dgn2.cur",
+        "handwriting.cur",
+        "help.cur",
+        "horz.cur",
+        "Install.inf",
+        "link.cur",
+        "move.cur",
+        "person.cur",
+        "pin.cur",
+        "pointer.cur",
+        "precision.cur",
+        "unavailable.cur",
+        "vert.cur",
+        "working.ani"
+      ]
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc\\light": {
+      "dirs": [
+        "alternatives",
+        "cursor"
+      ],
+      "files": []
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc\\light\\alternatives": {
+      "dirs": [],
+      "files": [
+        "precision.cur"
+      ]
+    },
+    "Downloads\\windows_11_cursors_concept_v2_by_jepricreations_densjkc\\light\\cursor": {
+      "dirs": [],
+      "files": [
+        "alternate.cur",
+        "beam.cur",
+        "busy.ani",
+        "dgn1.cur",
+        "dgn2.cur",
+        "handwriting.cur",
+        "help.cur",
+        "horz.cur",
+        "Install.inf",
+        "link.cur",
+        "move.cur",
+        "person.cur",
+        "pin.cur",
+        "pointer.cur",
+        "precision.cur",
+        "unavailable.cur",
+        "vert.cur",
+        "working.ani"
+      ]
+    },
+    "Downloads\\__MACOSX": {
+      "dirs": [
+        "gfg"
+      ],
+      "files": []
+    },
+    "eclipse-workspace": {
+      "dirs": [
+        ".metadata",
+        "algorithmspart1",
+        "helloworld",
+        "percol"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata": {
+      "dirs": [
+        ".mylyn",
+        ".plugins"
+      ],
+      "files": [
+        ".lock",
+        ".log",
+        "version.ini"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.mylyn": {
+      "dirs": [
+        ".taskListIndex",
+        "contexts"
+      ],
+      "files": [
+        ".tasks.xml.zip",
+        "repositories.xml.zip",
+        "tasks.xml.zip"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.mylyn\\.taskListIndex": {
+      "dirs": [],
+      "files": [
+        "segments_1",
+        "write.lock"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins": {
+      "dirs": [
+        "org.eclipse.core.resources",
+        "org.eclipse.core.runtime",
+        "org.eclipse.debug.core",
+        "org.eclipse.debug.ui",
+        "org.eclipse.e4.workbench",
+        "org.eclipse.eclemma.core",
+        "org.eclipse.egit.core",
+        "org.eclipse.emf.common.ui",
+        "org.eclipse.jdt.core",
+        "org.eclipse.jdt.launching",
+        "org.eclipse.jdt.ui",
+        "org.eclipse.ltk.core.refactoring",
+        "org.eclipse.m2e.core",
+        "org.eclipse.m2e.jdt",
+        "org.eclipse.m2e.logback",
+        "org.eclipse.mylyn.context.core",
+        "org.eclipse.mylyn.tasks.ui",
+        "org.eclipse.oomph.setup",
+        "org.eclipse.oomph.setup.ui",
+        "org.eclipse.tips.ide",
+        "org.eclipse.tm.terminal.view.ui",
+        "org.eclipse.ui.ide",
+        "org.eclipse.ui.intro",
+        "org.eclipse.ui.workbench",
+        "org.eclipse.userstorage.oauth"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources": {
+      "dirs": [
+        ".history",
+        ".projects",
+        ".root",
+        ".safetable"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.history": {
+      "dirs": [
+        "11",
+        "17",
+        "1f",
+        "20",
+        "25",
+        "27",
+        "2c",
+        "2d",
+        "3c",
+        "41",
+        "43",
+        "46",
+        "4f",
+        "51",
+        "52",
+        "58",
+        "64",
+        "69",
+        "6e",
+        "7a",
+        "84",
+        "8e",
+        "91",
+        "93",
+        "95",
+        "96",
+        "9e",
+        "a1",
+        "a5",
+        "a6",
+        "aa",
+        "ab",
+        "af",
+        "b4",
+        "c",
+        "cb",
+        "cc",
+        "d1",
+        "d5",
+        "d7",
+        "e4",
+        "ea",
+        "f8"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects": {
+      "dirs": [
+        ".org.eclipse.egit.core.cmp",
+        "algorithmspart1",
+        "ems",
+        "helloworld",
+        "percol"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\.org.eclipse.egit.core.cmp": {
+      "dirs": [],
+      "files": [
+        ".location"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\algorithmspart1": {
+      "dirs": [
+        "org.eclipse.jdt.core"
+      ],
+      "files": [
+        ".markers"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\algorithmspart1\\org.eclipse.jdt.core": {
+      "dirs": [],
+      "files": [
+        "state.dat"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\ems": {
+      "dirs": [
+        "org.eclipse.jdt.core"
+      ],
+      "files": [
+        ".location",
+        ".markers",
+        "1.tree"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\ems\\org.eclipse.jdt.core": {
+      "dirs": [],
+      "files": [
+        "state.dat"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\helloworld": {
+      "dirs": [
+        "org.eclipse.jdt.core"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\helloworld\\org.eclipse.jdt.core": {
+      "dirs": [],
+      "files": [
+        "state.dat"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\percol": {
+      "dirs": [
+        "org.eclipse.jdt.core"
+      ],
+      "files": [
+        ".markers"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.projects\\percol\\org.eclipse.jdt.core": {
+      "dirs": [],
+      "files": [
+        "state.dat"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.root": {
+      "dirs": [
+        ".indexes"
+      ],
+      "files": [
+        "6.tree"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.root\\.indexes": {
+      "dirs": [],
+      "files": [
+        "history.version",
+        "properties.index",
+        "properties.version"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.resources\\.safetable": {
+      "dirs": [],
+      "files": [
+        "org.eclipse.core.resources"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.runtime": {
+      "dirs": [
+        ".settings"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.core.runtime\\.settings": {
+      "dirs": [],
+      "files": [
+        "org.eclipse.core.resources.prefs",
+        "org.eclipse.debug.ui.prefs",
+        "org.eclipse.jdt.core.prefs",
+        "org.eclipse.jdt.junit.prefs",
+        "org.eclipse.jdt.launching.prefs",
+        "org.eclipse.jdt.ui.prefs",
+        "org.eclipse.jsch.core.prefs",
+        "org.eclipse.m2e.discovery.prefs",
+        "org.eclipse.mylyn.context.core.prefs",
+        "org.eclipse.mylyn.java.ui.prefs",
+        "org.eclipse.mylyn.monitor.ui.prefs",
+        "org.eclipse.mylyn.tasks.ui.prefs",
+        "org.eclipse.ui.browser.prefs",
+        "org.eclipse.ui.ide.prefs",
+        "org.eclipse.ui.prefs",
+        "org.eclipse.ui.workbench.prefs",
+        "org.eclipse.urischeme.prefs"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.debug.core": {
+      "dirs": [
+        ".launches"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.debug.core\\.launches": {
+      "dirs": [],
+      "files": [
+        "array.launch",
+        "HelloGoodbye.launch",
+        "HelloWorld.launch",
+        "RandomWord.launch",
+        "sample (1).launch",
+        "sample.launch"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.debug.ui": {
+      "dirs": [],
+      "files": [
+        "dialog_settings.xml",
+        "launchConfigurationHistory.xml"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.e4.workbench": {
+      "dirs": [],
+      "files": [
+        "workbench.xmi"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.eclemma.core": {
+      "dirs": [
+        ".execdata"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.eclemma.core\\.execdata": {
+      "dirs": [],
+      "files": [
+        "session10765501672691948738.exec",
+        "session11700452311818677309.exec",
+        "session16617261211932502125.exec",
+        "session1846869934756699757.exec",
+        "session924128742898939371.exec"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.egit.core": {
+      "dirs": [
+        ".org.eclipse.egit.core.cmp"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.egit.core\\.org.eclipse.egit.core.cmp": {
+      "dirs": [
+        ".settings"
+      ],
+      "files": [
+        ".project"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.egit.core\\.org.eclipse.egit.core.cmp\\.settings": {
+      "dirs": [],
+      "files": [
+        "org.eclipse.core.resources.prefs"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.jdt.core": {
+      "dirs": [],
+      "files": [
+        "1865797976.index",
+        "2196844739.index",
+        "238022196.index",
+        "2646716602.index",
+        "54703828.index",
+        "assumedExternalFilesCache",
+        "externalFilesCache",
+        "externalLibsTimeStamps",
+        "javaLikeNames.txt",
+        "nonChainingJarsCache",
+        "savedIndexNames.txt",
+        "variablesAndContainers.dat"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.jdt.launching": {
+      "dirs": [],
+      "files": [
+        ".install.xml",
+        "libraryInfos.xml"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.jdt.ui": {
+      "dirs": [
+        "jdt-images"
+      ],
+      "files": [
+        "dialog_settings.xml",
+        "OpenTypeHistory.xml",
+        "QualifiedTypeNameHistory.xml"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.jdt.ui\\jdt-images": {
+      "dirs": [],
+      "files": [
+        "0.png"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.m2e.core": {
+      "dirs": [],
+      "files": [
+        "workspaceState.ser"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.m2e.logback": {
+      "dirs": [],
+      "files": [
+        "0.log",
+        "logback.2.6.0.20240217-1525.xml"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.mylyn.context.core": {
+      "dirs": [
+        "contexts"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.oomph.setup": {
+      "dirs": [],
+      "files": [
+        "workspace.setup"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.tips.ide": {
+      "dirs": [],
+      "files": [
+        "dialog_settings.xml"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.tm.terminal.view.ui": {
+      "dirs": [
+        ".executables"
+      ],
+      "files": []
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.tm.terminal.view.ui\\.executables": {
+      "dirs": [],
+      "files": [
+        "data.properties"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.ui.ide": {
+      "dirs": [],
+      "files": [
+        "dialog_settings.xml"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.ui.intro": {
+      "dirs": [],
+      "files": [
+        "dialog_settings.xml",
+        "introstate"
+      ]
+    },
+    "eclipse-workspace\\.metadata\\.plugins\\org.eclipse.ui.workbench": {
+      "dirs": [],
+      "files": [
+        "dialog_settings.xml",
+        "workingsets.xml"
+      ]
+    },
+    "eclipse-workspace\\algorithmspart1": {
+      "dirs": [
+        ".settings",
+        "src"
+      ],
+      "files": [
+        ".classpath",
+        ".project"
+      ]
+    },
+    "eclipse-workspace\\algorithmspart1\\.settings": {
+      "dirs": [],
+      "files": [
+        "org.eclipse.core.resources.prefs",
+        "org.eclipse.jdt.core.prefs"
+      ]
+    },
+    "eclipse-workspace\\algorithmspart1\\src": {
+      "dirs": [
+        "algorithmspart1"
+      ],
+      "files": [
+        "module-info.java"
+      ]
+    },
+    "eclipse-workspace\\algorithmspart1\\src\\algorithmspart1": {
+      "dirs": [],
+      "files": [
+        "array.java",
+        "HelloGoodbye.java",
+        "HelloWorld.java",
+        "percolation.java",
+        "RandomWord.java",
+        "sample.java"
+      ]
+    },
+    "eclipse-workspace\\helloworld": {
+      "dirs": [
+        ".settings",
+        "src"
+      ],
+      "files": [
+        ".classpath",
+        ".project"
+      ]
+    },
+    "eclipse-workspace\\helloworld\\.settings": {
+      "dirs": [],
+      "files": [
+        "org.eclipse.core.resources.prefs",
+        "org.eclipse.jdt.core.prefs"
+      ]
+    },
+    "eclipse-workspace\\helloworld\\src": {
+      "dirs": [
+        "helloworld"
+      ],
+      "files": [
+        "module-info.java"
+      ]
+    },
+    "eclipse-workspace\\helloworld\\src\\helloworld": {
+      "dirs": [],
+      "files": [
+        "sample.java"
+      ]
+    },
+    "eclipse-workspace\\percol": {
+      "dirs": [
+        ".settings",
+        "src"
+      ],
+      "files": [
+        ".classpath",
+        ".project"
+      ]
+    },
+    "eclipse-workspace\\percol\\.settings": {
+      "dirs": [],
+      "files": [
+        "org.eclipse.core.resources.prefs",
+        "org.eclipse.jdt.core.prefs"
+      ]
+    },
+    "eclipse-workspace\\percol\\src": {
+      "dirs": [
+        "percol"
+      ],
+      "files": [
+        "module-info.java"
+      ]
+    },
+    "eclipse-workspace\\percol\\src\\percol": {
+      "dirs": [],
+      "files": [
+        "percolation.java"
+      ]
+    },
+    "IdeaProjects": {
+      "dirs": [
+        "ems"
+      ],
+      "files": []
+    },
+    "IdeaProjects\\ems": {
+      "dirs": [
+        "src"
+      ],
+      "files": [
+        "ems.iml"
+      ]
+    },
+    "IdeaProjects\\ems\\src": {
+      "dirs": [],
+      "files": [
+        "Main.java"
+      ]
+    },
+    "Music": {
+      "dirs": [],
+      "files": [
+        "desktop.ini"
+      ]
+    },
+    "OneDrive\\Desktop": {
+      "dirs": [
+        "aimsa",
+        "cvdl",
+        "database",
+        "javascript tuto",
+        "pantechai30days",
+        "pd-2",
+        "py_spark project"
+      ],
+      "files": [
+        "app.exe",
+        "c1.txt",
+        "cloud2.pdf",
+        "cloud3.pdf",
+        "desktop.ini",
+        "fakesat.xlsx",
+        "Final Project.zip",
+        "Google Classroom.lnk",
+        "Jupp.lnk",
+        "Microsoft Edge.lnk",
+        "MongoDBCompass.lnk",
+        "Postman.lnk",
+        "qtphi.docx",
+        "red.pdf",
+        "Visual Studio Code.lnk"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa": {
+      "dirs": [
+        "public",
+        "src"
+      ],
+      "files": [
+        "LICENSE",
+        "package-lock.json",
+        "package.json",
+        "README.md",
+        "yarn.lock",
+        "_config.yml"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public": {
+      "dirs": [
+        "css",
+        "fonts",
+        "img",
+        "js"
+      ],
+      "files": [
+        "index.html",
+        "robots.txt"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\css": {
+      "dirs": [
+        "nivo-lightbox"
+      ],
+      "files": [
+        "bootstrap.css",
+        "bootstrap.min.css",
+        "style.css"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\css\\nivo-lightbox": {
+      "dirs": [],
+      "files": [
+        "close.png",
+        "close@2x.png",
+        "default.css",
+        "loading.gif",
+        "loading@2x.gif",
+        "next.png",
+        "next@2x.png",
+        "nivo-lightbox.css",
+        "prev.png",
+        "prev@2x.png"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts": {
+      "dirs": [
+        "font-awesome",
+        "fonts"
+      ],
+      "files": [
+        "ndot-45-inspired-by-nothing.otf",
+        "ndot-47-inspired-by-nothing.otf",
+        "Ndot_55.otf"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts\\font-awesome": {
+      "dirs": [
+        "css",
+        "fonts",
+        "less",
+        "scss"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts\\font-awesome\\css": {
+      "dirs": [],
+      "files": [
+        "font-awesome.css",
+        "font-awesome.min.css"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts\\font-awesome\\fonts": {
+      "dirs": [],
+      "files": [
+        "fontawesome-webfont.eot",
+        "fontawesome-webfont.svg",
+        "fontawesome-webfont.ttf",
+        "fontawesome-webfont.woff",
+        "fontawesome-webfont.woff2",
+        "FontAwesome.otf"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts\\font-awesome\\less": {
+      "dirs": [],
+      "files": [
+        "animated.less",
+        "bordered-pulled.less",
+        "core.less",
+        "fixed-width.less",
+        "font-awesome.less",
+        "icons.less",
+        "larger.less",
+        "list.less",
+        "mixins.less",
+        "path.less",
+        "rotated-flipped.less",
+        "stacked.less",
+        "variables.less"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts\\font-awesome\\scss": {
+      "dirs": [],
+      "files": [
+        "font-awesome.scss",
+        "_animated.scss",
+        "_bordered-pulled.scss",
+        "_core.scss",
+        "_fixed-width.scss",
+        "_icons.scss",
+        "_larger.scss",
+        "_list.scss",
+        "_mixins.scss",
+        "_path.scss",
+        "_rotated-flipped.scss",
+        "_stacked.scss",
+        "_variables.scss"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\fonts\\fonts": {
+      "dirs": [],
+      "files": [
+        "glyphicons-halflings-regular.eot",
+        "glyphicons-halflings-regular.svg",
+        "glyphicons-halflings-regular.ttf",
+        "glyphicons-halflings-regular.woff",
+        "glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\img": {
+      "dirs": [],
+      "files": [
+        "Aimsa.png",
+        "favicon.ico"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\public\\js": {
+      "dirs": [],
+      "files": [
+        "bootstrap.js",
+        "jquery.1.11.1.js"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\src": {
+      "dirs": [
+        "components",
+        "data"
+      ],
+      "files": [
+        "App.jsx",
+        "index.css",
+        "index.js",
+        "serviceWorker.js",
+        "setupTests.js"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\src\\components": {
+      "dirs": [],
+      "files": [
+        "contact.jsx",
+        "Desk.jsx",
+        "gallery.jsx",
+        "header.jsx",
+        "image.jsx",
+        "JuniorExecutives.jsx",
+        "navigation.jsx",
+        "Team.jsx"
+      ]
+    },
+    "OneDrive\\Desktop\\aimsa\\src\\data": {
+      "dirs": [],
+      "files": [
+        "data.json"
+      ]
+    },
+    "OneDrive\\Desktop\\cvdl": {
+      "dirs": [
+        "fa1"
+      ],
+      "files": [
+        "BTshape.ipynb",
+        "computer_vision_1.ipynb",
+        "cv1.pdf",
+        "cvdlassesment.py",
+        "dataprepare.ipynb"
+      ]
+    },
+    "OneDrive\\Desktop\\cvdl\\fa1": {
+      "dirs": [],
+      "files": [
+        "Canny_Detector.ipynb",
+        "Canny_Detector.py",
+        "demo_vid.mp4",
+        "Gaussian_HPF.ipynb",
+        "Gaussian_HPF.py"
+      ]
+    },
+    "OneDrive\\Desktop\\database": {
+      "dirs": [
+        "bhavesh",
+        "felina",
+        "harshal",
+        "nishka",
+        "pragati",
+        "pranav",
+        "saniya",
+        "shwetank",
+        "supriya",
+        "tejas",
+        "tejashree",
+        "yukta"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\database\\bhavesh": {
+      "dirs": [
+        "twit"
+      ],
+      "files": [
+        "IMG_0229.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\felina": {
+      "dirs": [],
+      "files": [
+        "IMG20240827094420.jpg",
+        "IMG20240827094452.jpg",
+        "IMG_0215.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\harshal": {
+      "dirs": [],
+      "files": [
+        "IMG_0200.JPG",
+        "IMG_0234.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\nishka": {
+      "dirs": [],
+      "files": [
+        "IMG_0217.JPG",
+        "NISHKA.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\pragati": {
+      "dirs": [],
+      "files": [
+        "IMG_0224.JPG",
+        "IMG_0225.JPG",
+        "PRAGATI.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\pranav": {
+      "dirs": [],
+      "files": [
+        "IMG_0222.JPG",
+        "IMG_0223.JPG",
+        "PRANAV.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\saniya": {
+      "dirs": [],
+      "files": [
+        "IMG20240827094535.jpg",
+        "IMG20240827094539.jpg",
+        "IMG_0216.JPG"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\shwetank": {
+      "dirs": [],
+      "files": [
+        "IMG_20240901_122912.jpg",
+        "SWETANK.jpg"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\supriya": {
+      "dirs": [],
+      "files": [
+        "IMG_0219.JPG",
+        "SUPRIYA.jpg"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\tejas": {
+      "dirs": [],
+      "files": [
+        "IMG_0220.JPG",
+        "IMG_0232.JPG",
+        "IMG_0254.JPG",
+        "IMG_0255.JPG",
+        "TEJAS.jpg"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\tejashree": {
+      "dirs": [],
+      "files": [
+        "IMG20240827144106.jpg",
+        "IMG_0214.JPG",
+        "TEJASHREE.jpg"
+      ]
+    },
+    "OneDrive\\Desktop\\database\\yukta": {
+      "dirs": [],
+      "files": [
+        "IMG_0227.JPG",
+        "IMG_0259.JPG",
+        "YUKTA.jpg"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto": {
+      "dirs": [
+        "async-js",
+        "bookList APP",
+        "bootstrap_tuto",
+        "fetch-api",
+        "final_dom_proj",
+        "Item Lister",
+        "vid1",
+        "Weight Converter"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\javascript tuto\\async-js": {
+      "dirs": [],
+      "files": [
+        "callbacks.js",
+        "index.html",
+        "promises.js"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\bookList APP": {
+      "dirs": [],
+      "files": [
+        "bootstrap.min.css",
+        "index.html",
+        "script.js"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\bootstrap_tuto": {
+      "dirs": [
+        "css"
+      ],
+      "files": [
+        "index.html",
+        "style.css"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\bootstrap_tuto\\css": {
+      "dirs": [],
+      "files": [
+        "bootstrap-grid.css",
+        "bootstrap-grid.css.map",
+        "bootstrap-grid.min.css",
+        "bootstrap-grid.min.css.map",
+        "bootstrap-grid.rtl.css",
+        "bootstrap-grid.rtl.css.map",
+        "bootstrap-grid.rtl.min.css",
+        "bootstrap-grid.rtl.min.css.map",
+        "bootstrap-reboot.css",
+        "bootstrap-reboot.css.map",
+        "bootstrap-reboot.min.css",
+        "bootstrap-reboot.min.css.map",
+        "bootstrap-reboot.rtl.css",
+        "bootstrap-reboot.rtl.css.map",
+        "bootstrap-reboot.rtl.min.css",
+        "bootstrap-reboot.rtl.min.css.map",
+        "bootstrap-utilities.css",
+        "bootstrap-utilities.css.map",
+        "bootstrap-utilities.min.css",
+        "bootstrap-utilities.min.css.map",
+        "bootstrap-utilities.rtl.css",
+        "bootstrap-utilities.rtl.css.map",
+        "bootstrap-utilities.rtl.min.css",
+        "bootstrap-utilities.rtl.min.css.map",
+        "bootstrap.css",
+        "bootstrap.css.map",
+        "bootstrap.min.css",
+        "bootstrap.min.css.map",
+        "bootstrap.rtl.css",
+        "bootstrap.rtl.css.map",
+        "bootstrap.rtl.min.css",
+        "bootstrap.rtl.min.css.map"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\fetch-api": {
+      "dirs": [
+        "css",
+        "js"
+      ],
+      "files": [
+        "index.html",
+        "sample.txt",
+        "users.json"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\fetch-api\\css": {
+      "dirs": [],
+      "files": [
+        "bootstrap.min.css"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\fetch-api\\js": {
+      "dirs": [],
+      "files": [
+        "scripts.js"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\final_dom_proj": {
+      "dirs": [],
+      "files": [
+        "index.html",
+        "script.js"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\Item Lister": {
+      "dirs": [],
+      "files": [
+        "index.html",
+        "script.js",
+        "style.css"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\vid1": {
+      "dirs": [],
+      "files": [
+        "index.html",
+        "scrip.js",
+        "script.js",
+        "style.css"
+      ]
+    },
+    "OneDrive\\Desktop\\javascript tuto\\Weight Converter": {
+      "dirs": [],
+      "files": [
+        "bootstrap.min.css",
+        "index.html",
+        "script.js"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days": {
+      "dirs": [
+        "day1",
+        "day2",
+        "DAY3"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day1": {
+      "dirs": [
+        "assets"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day1\\assets": {
+      "dirs": [
+        "css",
+        "images",
+        "js",
+        "videos"
+      ],
+      "files": [
+        "index.html"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day1\\assets\\css": {
+      "dirs": [],
+      "files": [
+        "style.css"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day1\\assets\\js": {
+      "dirs": [],
+      "files": [
+        "script.js"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day2": {
+      "dirs": [
+        "logos",
+        "projects img"
+      ],
+      "files": [
+        "bgs.jpg",
+        "dom.html",
+        "Harshal(CV).pdf",
+        "index.html",
+        "mi.webp",
+        "project1.html",
+        "project2.html",
+        "script.js",
+        "style_1.css"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day2\\logos": {
+      "dirs": [],
+      "files": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.jpeg",
+        "5.jpg",
+        "6.png",
+        "7.webp",
+        "8.png",
+        "git.jpeg",
+        "git.png",
+        "ln.png",
+        "mail.png"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days\\day2\\projects img": {
+      "dirs": [],
+      "files": [
+        "hcr.jpg"
+      ]
+    },
+    "OneDrive\\Desktop\\pantechai30days\\DAY3": {
+      "dirs": [],
+      "files": [
+        "PRACTICE.JS"
+      ]
+    },
+    "OneDrive\\Desktop\\pd-2": {
+      "dirs": [],
+      "files": [
+        "app.py"
+      ]
+    },
+    "OneDrive\\Desktop\\py_spark project": {
+      "dirs": [
+        ".ipynb_checkpoints",
+        "myenv"
+      ],
+      "files": [
+        "multivariate-analysis.pdf",
+        "Multivariate_Analysis.ipynb"
+      ]
+    },
+    "OneDrive\\Desktop\\py_spark project\\.ipynb_checkpoints": {
+      "dirs": [],
+      "files": [
+        "Clustering_Analysis-checkpoint.ipynb",
+        "input-checkpoint.txt",
+        "Matrix_Multiplication(1)-checkpoint.ipynb",
+        "Multivariate_Analysis-checkpoint.ipynb",
+        "Sentiment_Analysis-checkpoint.ipynb",
+        "Timeseries_Analysis-checkpoint.ipynb",
+        "wordcount-checkpoint.ipynb"
+      ]
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv": {
+      "dirs": [
+        "Include",
+        "Lib",
+        "Scripts",
+        "share"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\Scripts": {
+      "dirs": [],
+      "files": [
+        "activate",
+        "activate.bat",
+        "Activate.ps1",
+        "beeline",
+        "beeline.cmd",
+        "deactivate.bat",
+        "debugpy.exe",
+        "docker-image-tool.sh",
+        "email_validator.exe",
+        "f2py.exe",
+        "find-spark-home",
+        "find-spark-home.cmd",
+        "find_spark_home.py",
+        "ipython.exe",
+        "ipython3.exe",
+        "jsonschema.exe",
+        "jupyter-kernel.exe",
+        "jupyter-kernelspec.exe",
+        "jupyter-migrate.exe",
+        "jupyter-run.exe",
+        "jupyter-troubleshoot.exe",
+        "jupyter-trust.exe",
+        "jupyter.exe",
+        "load-spark-env.cmd",
+        "load-spark-env.sh",
+        "markdown-it.exe",
+        "normalizer.exe",
+        "numpy-config.exe",
+        "pip.exe",
+        "pip3.11.exe",
+        "pip3.exe",
+        "protoc-gen-grpclib_python.exe",
+        "protoc-gen-python_betterproto.exe",
+        "protoc-gen-python_grpc.exe",
+        "pygmentize.exe",
+        "pyspark",
+        "pyspark.cmd",
+        "pyspark2.cmd",
+        "python.exe",
+        "pythonw.exe",
+        "pywin32_postinstall.py",
+        "pywin32_testall.py",
+        "run-example",
+        "run-example.cmd",
+        "sigstore.exe",
+        "spark-class",
+        "spark-class.cmd",
+        "spark-class2.cmd",
+        "spark-connect-shell",
+        "spark-shell",
+        "spark-shell.cmd",
+        "spark-shell2.cmd",
+        "spark-sql",
+        "spark-sql.cmd",
+        "spark-sql2.cmd",
+        "spark-submit",
+        "spark-submit.cmd",
+        "spark-submit2.cmd",
+        "sparkR",
+        "sparkR.cmd",
+        "sparkR2.cmd",
+        "tqdm.exe"
+      ]
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share": {
+      "dirs": [
+        "jupyter",
+        "man",
+        "py4j"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share\\jupyter": {
+      "dirs": [
+        "kernels"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share\\jupyter\\kernels": {
+      "dirs": [
+        "python3"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share\\jupyter\\kernels\\python3": {
+      "dirs": [],
+      "files": [
+        "kernel.json",
+        "logo-32x32.png",
+        "logo-64x64.png",
+        "logo-svg.svg"
+      ]
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share\\man": {
+      "dirs": [
+        "man1"
+      ],
+      "files": []
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share\\man\\man1": {
+      "dirs": [],
+      "files": [
+        "ipython.1"
+      ]
+    },
+    "OneDrive\\Desktop\\py_spark project\\myenv\\share\\py4j": {
+      "dirs": [],
+      "files": [
+        "py4j0.10.9.7.jar"
+      ]
+    },
+    "OneDrive\\Pictures": {
+      "dirs": [
+        "Camera Roll",
+        "Saved Pictures",
+        "Screenshots"
+      ],
+      "files": [
+        "desktop.ini",
+        "developer-coding-7680x4320-13642.png"
+      ]
+    },
+    "OneDrive\\Pictures\\Camera Roll": {
+      "dirs": [
+        "bd"
+      ],
+      "files": [
+        "desktop.ini"
+      ]
+    },
+    "OneDrive\\Pictures\\Camera Roll\\bd": {
+      "dirs": [],
+      "files": [
+        "5962ea38-ed7e-4c3c-ba4e-493ddcc21fc0-loan-train.csv",
+        "Amazon ML Summer School Previous Year Questions[1].pdf",
+        "aplack.pdf",
+        "apllform.pdf",
+        "bd1.mp4",
+        "Cream Light Romantic Wedding Heart Photo Collage.mp4.crdownload",
+        "f1.jpg",
+        "f10.jpg",
+        "f11.jpg",
+        "f12.jpg",
+        "f13.jpg",
+        "f14.jpg",
+        "f15.jpg",
+        "f16.jpg",
+        "f17.jpg",
+        "f18.jpg",
+        "f2.jpg",
+        "f3.jpg",
+        "f4.jpg",
+        "f5.jpg",
+        "f6.jpg",
+        "f7.jpg",
+        "f8.jpg",
+        "f9.jpg",
+        "feerst.pdf",
+        "m1.mp3"
+      ]
+    },
+    "OneDrive\\Pictures\\Saved Pictures": {
+      "dirs": [],
+      "files": [
+        "desktop.ini"
+      ]
+    },
+    "OneDrive\\Pictures\\Screenshots": {
+      "dirs": [],
+      "files": [
+        "desktop.ini",
+        "rmss.png",
+        "Screenshot 2024-12-05 223323.png",
+        "Screenshot 2024-12-05 223840.png",
+        "Screenshot 2024-12-05 224720.png",
+        "Screenshot 2024-12-05 224940.png",
+        "Screenshot 2024-12-05 224946.png",
+        "Screenshot 2024-12-05 231333.png",
+        "Screenshot 2024-12-05 232309.png",
+        "Screenshot 2024-12-05 232423.png",
+        "Screenshot 2024-12-06 050539.png",
+        "Screenshot 2024-12-06 052835.png",
+        "Screenshot 2024-12-06 055400.png",
+        "Screenshot 2024-12-06 060236.png",
+        "Screenshot 2024-12-06 062746.png",
+        "Screenshot 2024-12-06 062935.png",
+        "Screenshot 2024-12-06 183530.png",
+        "Screenshot 2024-12-06 183535.png",
+        "Screenshot 2024-12-06 183548.png",
+        "Screenshot 2024-12-06 192315.png",
+        "Screenshot 2024-12-06 192325.png",
+        "Screenshot 2024-12-06 204500.png",
+        "Screenshot 2024-12-06 204512.png",
+        "Screenshot 2024-12-06 204706.png",
+        "Screenshot 2024-12-12 142116.png",
+        "Screenshot 2024-12-12 183948.png",
+        "Screenshot 2024-12-13 190836.png",
+        "Screenshot 2024-12-16 183807.png",
+        "Screenshot 2024-12-16 183906.png",
+        "Screenshot 2024-12-16 184107.png",
+        "Screenshot 2024-12-17 151746.png",
+        "Screenshot 2024-12-17 152011.png",
+        "Screenshot 2024-12-17 153221.png",
+        "Screenshot 2024-12-19 185147.png",
+        "Screenshot 2024-12-20 160535.png",
+        "Screenshot 2024-12-21 162017.png",
+        "Screenshot 2024-12-21 162025.png",
+        "Screenshot 2024-12-21 164147.png",
+        "Screenshot 2024-12-21 164432.png",
+        "Screenshot 2024-12-23 182217.png",
+        "Screenshot 2024-12-23 182317.png",
+        "Screenshot 2024-12-29 193158.png",
+        "Screenshot 2024-12-29 193824.png",
+        "Screenshot 2024-12-30 162945.png",
+        "Screenshot 2025-01-02 082404.png",
+        "Screenshot 2025-01-02 082419.png",
+        "Screenshot 2025-01-02 082435.png",
+        "Screenshot 2025-01-02 082501.png",
+        "Screenshot 2025-01-02 082523.png",
+        "Screenshot 2025-01-02 082536.png",
+        "Screenshot 2025-01-02 082629.png",
+        "Screenshot 2025-01-02 082712.png",
+        "Screenshot 2025-01-02 082722.png",
+        "Screenshot 2025-01-02 082732.png",
+        "Screenshot 2025-01-02 082758.png",
+        "Screenshot 2025-01-02 082817.png",
+        "Screenshot 2025-01-02 082929.png",
+        "Screenshot 2025-01-02 083024.png",
+        "Screenshot 2025-01-02 083038.png",
+        "Screenshot 2025-01-02 083048.png",
+        "Screenshot 2025-01-02 083131.png",
+        "Screenshot 2025-01-02 083154.png",
+        "Screenshot 2025-01-02 083206.png",
+        "Screenshot 2025-01-02 083234.png",
+        "Screenshot 2025-01-02 083248.png",
+        "Screenshot 2025-01-02 083306.png",
+        "Screenshot 2025-01-02 083315.png",
+        "Screenshot 2025-01-02 083325.png",
+        "Screenshot 2025-01-02 083338.png",
+        "Screenshot 2025-01-02 083349.png",
+        "Screenshot 2025-01-02 083426.png",
+        "Screenshot 2025-01-02 083443.png",
+        "Screenshot 2025-01-02 083504.png",
+        "Screenshot 2025-01-02 083551.png",
+        "Screenshot 2025-01-02 083614.png",
+        "Screenshot 2025-01-02 083644.png",
+        "Screenshot 2025-01-02 083649.png",
+        "Screenshot 2025-01-02 083724.png",
+        "Screenshot 2025-01-02 083743.png",
+        "Screenshot 2025-01-02 083811.png",
+        "Screenshot 2025-01-02 083825.png",
+        "Screenshot 2025-01-04 135928.png",
+        "Screenshot 2025-01-04 171506.png",
+        "Screenshot 2025-01-12 192648.png",
+        "Screenshot 2025-01-12 220555.png",
+        "Screenshot 2025-01-20 191416.png",
+        "Screenshot 2025-01-23 130931.png",
+        "Screenshot 2025-01-23 131451.png",
+        "Screenshot 2025-01-23 181455.png",
+        "Screenshot 2025-01-23 181513.png",
+        "Screenshot 2025-01-23 201030.png",
+        "Screenshot 2025-01-24 102721.png",
+        "Screenshot 2025-01-26 151921.png",
+        "Screenshot 2025-01-30 130733.png",
+        "Screenshot 2025-01-30 130739.png",
+        "Screenshot 2025-02-08 200851.png",
+        "Screenshot 2025-02-08 201754.png",
+        "Screenshot 2025-02-09 152251.png",
+        "Screenshot 2025-02-09 152305.png",
+        "Screenshot 2025-02-09 152322.png",
+        "Screenshot 2025-02-09 152335.png",
+        "Screenshot 2025-02-09 154354.png",
+        "Screenshot 2025-02-09 154446.png",
+        "Screenshot 2025-02-12 183246.png",
+        "Screenshot 2025-02-12 183253.png",
+        "Screenshot 2025-02-14 191202.png",
+        "Screenshot 2025-02-14 191818.png",
+        "Screenshot 2025-02-14 192057.png",
+        "Screenshot 2025-02-15 141142.png",
+        "Screenshot 2025-02-15 143647.png",
+        "Screenshot 2025-02-15 151157.png",
+        "Screenshot 2025-02-15 153429.png",
+        "Screenshot 2025-02-16 145646.png",
+        "Screenshot 2025-02-16 152130.png",
+        "Screenshot 2025-02-16 170039.png",
+        "Screenshot 2025-02-16 170114.png",
+        "Screenshot 2025-02-19 165934.png",
+        "Screenshot 2025-02-19 180235.png",
+        "Screenshot 2025-02-27 223255.png",
+        "Screenshot 2025-03-02 080748.png",
+        "Screenshot 2025-03-04 144826.png",
+        "Screenshot 2025-03-08 013500.png",
+        "Screenshot 2025-03-16 122728.png",
+        "Screenshot 2025-03-20 213407.png",
+        "Screenshot 2025-03-21 102223.png"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects": {
+      "dirs": [
+        "elecbill",
+        "elecbillmanagement",
+        "ems",
+        "mavenproject1",
+        "mavenproject2",
+        "mysql-connector-j-8.3.0"
+      ],
+      "files": [
+        "ems.zip"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbill": {
+      "dirs": [
+        "nbproject",
+        "src"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbill\\nbproject": {
+      "dirs": [
+        "private"
+      ],
+      "files": [
+        "genfiles.properties",
+        "project.properties",
+        "project.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbill\\nbproject\\private": {
+      "dirs": [],
+      "files": [
+        "private.properties"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbill\\src": {
+      "dirs": [
+        "elecbill"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbillmanagement": {
+      "dirs": [
+        "nbproject",
+        "src",
+        "test"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbillmanagement\\nbproject": {
+      "dirs": [
+        "private"
+      ],
+      "files": [
+        "genfiles.properties",
+        "project.properties",
+        "project.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbillmanagement\\nbproject\\private": {
+      "dirs": [],
+      "files": [
+        "private.properties",
+        "private.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbillmanagement\\src": {
+      "dirs": [
+        "elecbillmanagement"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\elecbillmanagement\\src\\elecbillmanagement": {
+      "dirs": [],
+      "files": [
+        "addc.form",
+        "addc.java",
+        "home.form",
+        "home.java"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\ems": {
+      "dirs": [
+        "nbproject",
+        "src",
+        "test"
+      ],
+      "files": [
+        "manifest.mf"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\ems\\nbproject": {
+      "dirs": [
+        "private"
+      ],
+      "files": [
+        "genfiles.properties",
+        "project.properties",
+        "project.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\ems\\nbproject\\private": {
+      "dirs": [],
+      "files": [
+        "private.properties",
+        "private.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\ems\\src": {
+      "dirs": [
+        "ems"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\ems\\src\\ems": {
+      "dirs": [
+        "icon"
+      ],
+      "files": [
+        "CalculateBill.java",
+        "Conn.java",
+        "CustomerDetails.java",
+        "Home.java",
+        "Login.java",
+        "MainScreen.java",
+        "NewCustomer.java",
+        "Signup.java",
+        "ViewInformation.java"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\ems\\src\\ems\\icon": {
+      "dirs": [],
+      "files": [
+        "elec1.png",
+        "electricity.png",
+        "new-cust.png",
+        "secondd.png"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject1": {
+      "dirs": [
+        "src"
+      ],
+      "files": [
+        "pom.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject1\\src": {
+      "dirs": [
+        "main"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject1\\src\\main": {
+      "dirs": [
+        "java"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject1\\src\\main\\java": {
+      "dirs": [
+        "com"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject1\\src\\main\\java\\com": {
+      "dirs": [
+        "mycompany"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject1\\src\\main\\java\\com\\mycompany": {
+      "dirs": [
+        "mavenproject1"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2": {
+      "dirs": [
+        "src"
+      ],
+      "files": [
+        "pom.xml"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2\\src": {
+      "dirs": [
+        "main"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2\\src\\main": {
+      "dirs": [
+        "java"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2\\src\\main\\java": {
+      "dirs": [
+        "com"
+      ],
+      "files": [
+        "login.form",
+        "login.java"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2\\src\\main\\java\\com": {
+      "dirs": [
+        "mycompany"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2\\src\\main\\java\\com\\mycompany": {
+      "dirs": [
+        "mavenproject2"
+      ],
+      "files": []
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mavenproject2\\src\\main\\java\\com\\mycompany\\mavenproject2": {
+      "dirs": [],
+      "files": [
+        "Mavenproject2.java"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\NetBeansProjects\\mysql-connector-j-8.3.0": {
+      "dirs": [],
+      "files": [
+        "CHANGES",
+        "INFO_BIN",
+        "INFO_SRC",
+        "LICENSE",
+        "mysql-connector-j-8.3.0.jar",
+        "README"
+      ]
+    },
+    "OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\Projects": {
+      "dirs": [],
+      "files": [
+        "NewFile.cpp",
+        "NewFile.exe",
+        "SCIENCE 2 PROJECT.pptx"
+      ]
+    },
+    "Pictures": {
+      "dirs": [],
+      "files": [
+        "desktop.ini"
+      ]
+    },
+    "Videos": {
+      "dirs": [
+        "Captures"
+      ],
+      "files": [
+        "desktop.ini",
+        "Harshal - Personal - Shortcut.lnk"
+      ]
+    },
+    "Videos\\Captures": {
+      "dirs": [],
+      "files": [
+        "desktop.ini"
+      ]
+    }
+  }
+}
