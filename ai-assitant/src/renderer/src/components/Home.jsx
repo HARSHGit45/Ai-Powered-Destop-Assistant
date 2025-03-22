@@ -14,8 +14,58 @@ const Home = () => {
     }
   }
 
+  const titleText = 'Welcome to Anshukal'
+  const letterVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.05,
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1]
+      }
+    })
+  }
+
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex flex-col gap-12 items-center justify-center min-h-screen">
+      <motion.div
+        className="text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.div
+          className="overflow-hidden relative"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1.5,
+            background: {
+              duration: 8,
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }
+          }}
+        >
+          <div className="flex justify-center mb-2">
+            {titleText.split('').map((char, i) => (
+              <motion.span
+                key={i}
+                custom={i}
+                variants={letterVariants}
+                initial="hidden"
+                animate="visible"
+                className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-transparent bg-clip-text font-bold bg-gradient-to-b from-gray-600 via-white to-gray-300 inline-block"
+                style={{ textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </motion.span>
+            ))}
+          </div>
+        </motion.div>
+      </motion.div>
       <AnimatePresence>
         {isExpanded ? (
           <motion.div
