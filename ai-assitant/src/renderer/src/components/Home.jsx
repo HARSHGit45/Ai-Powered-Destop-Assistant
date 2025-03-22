@@ -23,7 +23,7 @@ const Home = () => {
       message.rate = 1.0
       message.pitch = 1.0
       message.volume = 1.0
-      window.speechSynthesis.speak(message);
+      window.speechSynthesis.speak(message)
     }
   }
 
@@ -230,7 +230,7 @@ const Home = () => {
               }
             }}
           >
-            <div className="flex justify-center mb-2">
+            <div className="flex justify-center mb-2 head">
               {titleText.split('').map((char, i) => (
                 <motion.span
                   key={i}
@@ -238,7 +238,7 @@ const Home = () => {
                   variants={letterVariants}
                   initial="hidden"
                   animate="visible"
-                  className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-transparent bg-clip-text font-bold bg-gradient-to-b from-gray-600 via-white to-gray-300 inline-block"
+                  className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-clip-text font-bold bg-gradient-to-b from-gray-600 via-white to-gray-300 inline-block"
                   style={{ textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}
                 >
                   {char === ' ' ? '\u00A0' : char}
