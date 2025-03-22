@@ -8,7 +8,7 @@ class FileManager:
     def __init__(self):
         self.directory_tree = {}
         self.ignored_patterns = [
-            # System directories
+          
             '.git', '__pycache__', 'node_modules', 'venv',
             '*.pyc', '*.pyo', '*.pyd', '*.so', '*.dll',
             '.env', '.vscode', '.idea', '*.log',
@@ -16,18 +16,13 @@ class FileManager:
             '*.tmp', '*.temp', '*.swp', '*.swo',
             'Thumbs.db', '.DS_Store', '*.cache',
             'System Volume Information', '$Recycle.Bin', 'Recovery',
-            # Program files
             'Program Files', 'Program Files (x86)', 'Windows',
             'AppData', 'Local', 'Roaming', 'Temp',
-            # Large data directories
             'node_modules', 'vendor', 'packages',
             'node_modules', 'bower_components',
-            # Version control
             '.git', '.svn', '.hg',
-            # Build directories
             'build', 'dist', 'out', 'target',
             'bin', 'obj', 'Debug', 'Release',
-            # Cache directories
             '.cache', '.npm', '.yarn',
             'cache', 'temp', 'tmp'
         ]
@@ -39,19 +34,18 @@ class FileManager:
             'Projects', 'Work', 'Personal'
         ]
         
-        # Get user's home directory
+
         self.home_dir = str(Path.home())
         print(f"📁 User home directory: {self.home_dir}")
 
     def get_system_drives(self) -> List[str]:
         """Get user's home directory"""
-        return [self.home_dir]  # Only scan user's home directory
+        return [self.home_dir]  
 
     def is_in_user_directory(self, path: str) -> bool:
         """Check if a path is within any user directory"""
-        # Convert path to lowercase for case-insensitive comparison
+       
         path_lower = path.lower()
-        # Check if any user directory is in the path
         return any(user_dir.lower() in path_lower for user_dir in self.user_dirs)
 
     def get_directory_tree(self, start_path: str) -> Dict:
@@ -63,7 +57,7 @@ class FileManager:
                 dirs[:] = [d for d in dirs if not any(pattern in d for pattern in self.ignored_patterns)]
                 files[:] = [f for f in files if not any(pattern in f for pattern in self.ignored_patterns)]
                 
-                # Skip if no files or directories after filtering
+                
                 if not dirs and not files:
                     continue
                 

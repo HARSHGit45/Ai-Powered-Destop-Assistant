@@ -4,12 +4,12 @@ from dotenv import load_dotenv
 import json
 import re
 
-# Load environment variables
+
 load_dotenv()
 
 class LLMManager:
     def __init__(self):
-        # Try to get API key from environment or use the hardcoded one
+       
         self.api_key = os.getenv("GROQ_API_KEY")
         if not self.api_key:
             raise ValueError("GROQ_API_KEY not found in environment variables")
@@ -50,7 +50,7 @@ IMPORTANT:
                     context += f"- {path}\n"
                 context += "\n"
             
-            # Generate response from LLM
+           
             response = self.client.chat.completions.create(
                 model="llama-3.3-70b-versatile",
                 messages=[
@@ -61,10 +61,10 @@ IMPORTANT:
                 max_tokens=1000
             )
             
-            # Extract JSON from response
+            
             content = response.choices[0].message.content.strip()
             
-            # Remove any markdown code block markers
+          
             content = re.sub(r'```json\s*', '', content)
             content = re.sub(r'```\s*', '', content)
             

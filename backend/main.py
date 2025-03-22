@@ -19,15 +19,15 @@ class FileAssistant:
 
     def _initialize_system(self):
         """Initialize the system by scanning directories and creating embeddings"""
-        print("🔄 Checking system state...")
+        print(" Checking system state...")
         
         # Check if embeddings and directory tree already exist
         if self.embeddings_manager.load_embeddings():
-            print("✅ Found existing embeddings")
+            print("Found existing embeddings")
             # Update embeddings with any new paths
             self._update_embeddings()
         else:
-            print("⚠️ No existing embeddings found. Performing initial scan...")
+            print(" No existing embeddings found. Performing initial scan...")
             # Scan system for directory structure
             directory_tree = self.file_manager.scan_system()
             
@@ -41,7 +41,7 @@ class FileAssistant:
 
     def process_command(self, command: str) -> Dict:
         """Process a user command"""
-        print(f"\n🔍 Processing command: {command}")
+        print(f"\n Processing command: {command}")
         
         try:
             # Search for similar paths
@@ -52,18 +52,18 @@ class FileAssistant:
             
             if result["command"]:
                 # Handle file operation command
-                print(f"📝 Generated command: {result['command']}")
+                print(f" Generated command: {result['command']}")
                 print(f"ℹ️ Explanation: {result['explanation']}")
                 
                 try:
                     # Execute the command
                     success = self.execute_command(result["command"])
                     if success:
-                        print("✅ Command executed successfully!")
+                        print(" Command executed successfully!")
                         # Update embeddings with any new paths
                         self._update_embeddings()
                     else:
-                        print("❌ Command execution failed")
+                        print(" Command execution failed")
                     
                     return {
                         "success": success,
@@ -71,13 +71,13 @@ class FileAssistant:
                         "explanation": result["explanation"]
                     }
                 except Exception as e:
-                    print(f"❌ Error executing command: {str(e)}")
+                    print(f" Error executing command: {str(e)}")
                     return {
                         "success": False,
                         "message": f"Error executing command: {str(e)}"
                     }
             else:
-                print("❌ No command generated")
+                print(" No command generated")
                 return {
                     "success": False,
                     "message": "No command generated"
@@ -113,7 +113,7 @@ class FileAssistant:
     def _update_embeddings(self):
         """Update embeddings with any new paths"""
         try:
-            print("\n🔄 Checking for directory structure changes...")
+            print("\n Checking for directory structure changes...")
             # Scan for new paths
             directory_tree = self.file_manager.scan_system()
             
@@ -128,7 +128,7 @@ class FileAssistant:
 
 def main():
     assistant = FileAssistant()
-    print("\n🤖 File Assistant is ready! Type 'exit' to quit.")
+    print("\n File Assistant is ready! Type 'exit' to quit.")
     print("\nAvailable commands:")
     print("- File operations: create, move, copy, delete files and folders")
     
