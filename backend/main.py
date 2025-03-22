@@ -43,36 +43,52 @@ class FileAssistant:
         """Process a user command"""
         print(f"\n🔍 Processing command: {command}")
         
-        # Search for similar paths
-        similar_paths = self.embeddings_manager.search_paths(command)
-        
-        if not similar_paths:
-            print("⚠️ No relevant paths found")
-            return {
-                "command": "",
-                "explanation": "No relevant paths found for the command",
-                "imports": []
-            }
-        
-        # Process command with LLM
-        result = self.llm_manager.process_query(command, similar_paths)
-        
-        if result["command"]:
-            print(f"📝 Generated command: {result['command']}")
-            print(f"ℹ️ Explanation: {result['explanation']}")
+        try:
+            # Search for similar paths
+            similar_paths = self.embeddings_manager.search_paths(command)
             
-            # Execute the command
-            success = self.execute_command(result["command"])
-            if success:
-                print("✅ Command executed successfully!")
-                # Update embeddings with any new paths
-                self._update_embeddings()
+            # Process command with LLM
+            result = self.llm_manager.process_query(command, similar_paths)
+            
+            if result["command"]:
+                # Handle file operation command
+                print(f"📝 Generated command: {result['command']}")
+                print(f"ℹ️ Explanation: {result['explanation']}")
+                
+                try:
+                    # Execute the command
+                    success = self.execute_command(result["command"])
+                    if success:
+                        print("✅ Command executed successfully!")
+                        # Update embeddings with any new paths
+                        self._update_embeddings()
+                    else:
+                        print("❌ Command execution failed")
+                    
+                    return {
+                        "success": success,
+                        "command": result["command"],
+                        "explanation": result["explanation"]
+                    }
+                except Exception as e:
+                    print(f"❌ Error executing command: {str(e)}")
+                    return {
+                        "success": False,
+                        "message": f"Error executing command: {str(e)}"
+                    }
             else:
-                print("❌ Command execution failed")
-        else:
-            print("❌ No command generated")
-        
-        return result
+                print("❌ No command generated")
+                return {
+                    "success": False,
+                    "message": "No command generated"
+                }
+            
+        except Exception as e:
+            print(f"❌ Error processing command: {str(e)}")
+            return {
+                "success": False,
+                "message": f"Error processing command: {str(e)}"
+            }
 
     def execute_command(self, command: str) -> bool:
         """Execute a Python command safely"""
@@ -96,37 +112,25 @@ class FileAssistant:
 
     def _update_embeddings(self):
         """Update embeddings with any new paths"""
-        print("🔄 Checking for directory structure changes...")
-        
-        # Get the latest directory tree
-        directory_tree = self.file_manager.scan_system()
-        
-        # Extract all paths from the new directory tree
-        new_paths = []
-        for drive, tree in directory_tree.items():
-            for path, content in tree.items():
-                full_path = os.path.join(drive, path)
-                if full_path not in self.embeddings_manager.paths:
-                    new_paths.append(full_path)
-                    for dir_name in content["dirs"]:
-                        new_path = os.path.join(full_path, dir_name)
-                        if new_path not in self.embeddings_manager.paths:
-                            new_paths.append(new_path)
-                    for file_name in content["files"]:
-                        new_path = os.path.join(full_path, file_name)
-                        if new_path not in self.embeddings_manager.paths:
-                            new_paths.append(new_path)
-        
-        if new_paths:
-            print(f"📝 Found {len(new_paths)} new paths. Updating embeddings...")
-            self.embeddings_manager.update_embeddings(new_paths)
-            print("✅ Embeddings updated successfully!")
-        else:
-            print("✅ No new paths found. Directory structure is up to date.")
+        try:
+            print("\n🔄 Checking for directory structure changes...")
+            # Scan for new paths
+            directory_tree = self.file_manager.scan_system()
+            
+            # Save updated directory tree
+            self.file_manager.save_directory_tree(directory_tree)
+            
+            # Create new embeddings
+            self.embeddings_manager.create_embeddings(directory_tree)
+            print("✅ Directory structure is up to date.")
+        except Exception as e:
+            print(f"❌ Error updating embeddings: {str(e)}")
 
 def main():
     assistant = FileAssistant()
     print("\n🤖 File Assistant is ready! Type 'exit' to quit.")
+    print("\nAvailable commands:")
+    print("- File operations: create, move, copy, delete files and folders")
     
     while True:
         try:
@@ -138,7 +142,7 @@ def main():
         except KeyboardInterrupt:
             break
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"❌ Error: {str(e)}")
 
 if __name__ == "__main__":
     main() 
