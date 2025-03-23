@@ -17233,15 +17233,24 @@
     },
     "Downloads\\ai_pc_assistant\\Ai-Powered-Destop-Assistant\\backend": {
       "dirs": [
+        "app_controls",
         "browser_operations",
         "file_opr",
         "system_controls"
       ],
       "files": [
         "directory_tree.json",
+        "found_apps.json",
         "main_classify.py",
         "path_index.faiss",
         "path_list.json"
+      ]
+    },
+    "Downloads\\ai_pc_assistant\\Ai-Powered-Destop-Assistant\\backend\\app_controls": {
+      "dirs": [],
+      "files": [
+        "main.py",
+        "__init__.py"
       ]
     },
     "Downloads\\ai_pc_assistant\\Ai-Powered-Destop-Assistant\\backend\\browser_operations": {
