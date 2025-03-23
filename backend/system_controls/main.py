@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 import ctypes
 import win32com.shell.shell as shell
 import pythoncom
+from typing import Dict
 load_dotenv()
 
 class SystemControls:
@@ -261,33 +262,26 @@ def check_admin_required(command: str) -> bool:
     admin_commands = ['wifi', 'bluetooth', 'network', 'interface']
     return any(cmd in command.lower() for cmd in admin_commands)
 
-def process_command(command: str) -> None:
-    """Process a system control command using LLM to generate and execute code"""
+def process_command(command: str) -> Dict:
+    """Process a system control command"""
     try:
-        # Check if command requires admin privileges
-        if check_admin_required(command):
-            if not is_admin():
-                print("This command requires administrator privileges.")
-                print("Requesting administrator privileges...")
-                if not run_as_admin():
-                    print("Please run the script as administrator to use WiFi and Bluetooth controls.")
-                    return
-            else:
-                print("Running with administrator privileges.")
-            
         controls = SystemControls()
-        
-
         code = controls.generate_code(command)
-        if not code:
-            print("Failed to generate code for command")
-            return
-        
-
-        controls.execute_code(code)
-        
+        if code:
+            controls.execute_code(code)
+            return {
+                "success": True,
+                "result": "Command executed successfully"  # LLM's response will be printed directly
+            }
+        return {
+            "success": False,
+            "error": "Could not understand command"
+        }
     except Exception as e:
-        print(f"Error processing command: {str(e)}")
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 def main():
     print("\nSystem Controls Assistant is ready! Type 'exit' to quit.")
