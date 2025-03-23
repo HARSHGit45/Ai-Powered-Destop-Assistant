@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect, useMemo, useRef } from 'react'
 import { CiMicrophoneOn } from 'react-icons/ci'
-import { FiSend, FiTrash2, FiClock, FiCheckCircle, FiCircle, FiBell } from 'react-icons/fi'
+import { FiSend, FiTrash2, FiClock, FiCheckCircle, FiCircle, FiBell, FiX } from 'react-icons/fi'
 import { IoIosChatbubbles } from 'react-icons/io'
 import { FaTasks, FaFileAlt, FaSearch } from 'react-icons/fa'
 import { GrServices } from 'react-icons/gr'
@@ -15,7 +15,10 @@ const Home = () => {
   const [newTaskDeadline, setNewTaskDeadline] = useState('')
   const [reminderActive, setReminderActive] = useState(false)
   const [reminderTask, setReminderTask] = useState(null)
+  const [toast, setToast] = useState(null)
   const reminderTimeoutRef = useRef(null)
+  const toastTimeoutRef = useRef(null)
+  const [isListening, setIsListening] = useState(false)
 
   const speakWelcome = () => {
     if ('speechSynthesis' in window) {
@@ -113,26 +116,71 @@ const Home = () => {
     }
   }
 
-  // Listen for command results
-  useEffect(() => {
-    let lastSpokenText = '';
-    const handleCommandResult = (result) => {
-      if (!result) return; // Skip if result is undefined
-      
-      if (result.success && result.result && result.result !== lastSpokenText) {
-        // Only speak if we have a valid result and it's different from the last spoken text
-        lastSpokenText = result.result;
-        speak(result.result);
-      } else if (result.error && result.error !== 'undefined' && result.error !== lastSpokenText) {
-        // Only speak error if it's not undefined and different from the last spoken text
-        lastSpokenText = result.error;
-        speak(`Error: ${result.error}`);
-      }
-    };
+  // Function to handle voice input
+  const handleVoiceInput = () => {
+    if (!('webkitSpeechRecognition' in window)) {
+      showToast('Speech recognition is not supported in your browser');
+      return;
+    }
 
-    // Subscribe to command results
-    window.api.onCommandResult(handleCommandResult);
-  }, []);
+    if (!isListening) {
+      // Create a new recognition instance
+      const recognition = new window.webkitSpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = 'en-US';
+
+      recognition.onstart = () => {
+        setIsListening(true);
+        showToast('Listening... Speak your command');
+      };
+
+      recognition.onresult = (event) => {
+        const text = event.results[0][0].transcript;
+        setInputText(text);
+        
+        // Send the recognized text to the same processCommand method
+        window.api.processCommand({
+          type: 'text',
+          command: text.trim()
+        });
+      };
+
+      recognition.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+        setIsListening(false);
+        showToast('Error with voice recognition. Please try again.');
+      };
+
+      recognition.onend = () => {
+        setIsListening(false);
+      };
+
+      // Start recognition
+      recognition.start();
+    } else {
+      // Stop listening
+      setIsListening(false);
+      showToast('Voice input stopped');
+    }
+  };
+
+  // Function to show toast message
+  const showToast = (message) => {
+    if (!message) return;
+    
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current);
+    }
+    
+    console.log('Setting toast message:', message);
+    setToast(message);
+    
+    toastTimeoutRef.current = setTimeout(() => {
+      console.log('Clearing toast message');
+      setToast(null);
+    }, 5000); // Hide after 5 seconds
+  };
 
   const handleTaskSelect = (task) => {
     console.log(`Selected task: ${task}`)
@@ -234,7 +282,30 @@ const Home = () => {
   const completedTasks = useMemo(() => tasks.filter((task) => task.completed), [tasks])
 
   return (
-    <div className="flex min-h-screen ">
+    <div className="flex min-h-screen">
+      {/* Toast Notification */}
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            className="fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg z-50 max-w-md"
+            initial={{ opacity: 0, y: 50, scale: 0.3 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
+            transition={{ type: "spring", duration: 0.5 }}
+          >
+            <div className="flex items-center justify-between">
+              <p className="text-sm">{toast}</p>
+              <button
+                onClick={() => setToast(null)}
+                className="ml-4 text-gray-400 hover:text-white"
+              >
+                <FiX className="w-4 h-4" />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Main content area */}
       <div className="flex-1 flex flex-col gap-8 items-center justify-center py-8 px-4">
         <motion.div
@@ -438,10 +509,15 @@ const Home = () => {
                 transition={{ delay: 0.5 }}
               >
                 <button
-                  className="p-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 transition-colors"
+                  className={`p-2 rounded-full transition-colors ${
+                    isListening 
+                      ? 'bg-red-500 hover:bg-red-600 animate-pulse' 
+                      : 'bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700'
+                  }`}
+                  onClick={handleVoiceInput}
                   aria-label="Voice Input"
                 >
-                  <CiMicrophoneOn className="w-5 h-5 text-white" />
+                  <CiMicrophoneOn className={`w-5 h-5 text-white ${isListening ? 'animate-pulse' : ''}`} />
                 </button>
 
                 <input
