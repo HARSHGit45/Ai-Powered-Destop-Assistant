@@ -11,11 +11,8 @@ class CommandClassifier:
     def __init__(self):
         self.recognizer = sr.Recognizer()
         self.client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-        # Load embeddings at startup
-        print("Initializing system...")
         from file_opr.main import FileAssistant
-        self.file_assistant = FileAssistant(silent=True)  # Add silent mode
-        print("Ready!")
+        self.file_assistant = FileAssistant(silent=True)
         
         self.system_prompt = """You are a command classifier. Analyze the user's command and determine if it's:
         1. FILE_OPERATION - for file management tasks (create, delete, move, copy, search files)
@@ -34,12 +31,40 @@ class CommandClassifier:
         """Listen for voice command and convert to text"""
         try:
             with sr.Microphone() as source:
-                print("Listening...")
-                audio = self.recognizer.listen(source)
+                # Adjust for ambient noise
+                self.recognizer.adjust_for_ambient_noise(source, duration=0.5)
+                
+                # Set dynamic energy threshold
+                self.recognizer.dynamic_energy_threshold = True
+                self.recognizer.energy_threshold = 4000  # Initial threshold
+                
+             
+                audio = self.recognizer.listen(
+                    source,
+                    timeout=5,  # Maximum time to wait for speech to start
+                    phrase_time_limit=5,  # Maximum time for a single phrase
+                    snowboy_configuration=None  # Disable snowboy for better phrase detection
+                )
+                
+                # Convert speech to text
                 text = self.recognizer.recognize_google(audio)
                 return text
-        except Exception as e:
-            print("Error: Could not understand audio")
+                
+        except sr.WaitTimeoutError:
+            return None
+        except sr.UnknownValueError:
+            return None
+        except sr.RequestError:
+            return None
+        except Exception:
+            return None
+
+    def accept_command(self, command: str = None):
+        """Accept text command from user input"""
+        try:
+            command = input("Enter your command: ").strip()
+            return command if command else None
+        except Exception:
             return None
 
     def classify_command(self, command: str):
@@ -160,24 +185,50 @@ Rules:
             }
 
     def main_loop(self):
+        print("\nWelcome! Choose input method:")
+        print("1. Voice (press Enter)")
+        print("2. Text (type 'text' and press Enter)")
+        print("3. Exit (type 'exit' and press Enter)")
+        
         while True:
-            command = self.listen_command()
-            if not command:
-                continue
+            try:
+                choice = input("\nEnter your choice: ").strip().lower()
                 
-            classification = self.classify_command(command)
-            if classification["type"] == "EXIT":
+                if choice == 'exit':
+                    print(json.dumps({"success": True, "result": "Goodbye!"}))
+                    break
+                
+                # Get command based on input method
+                if choice == 'text' or choice == '2':
+                    command = self.accept_command()
+                elif choice == '1' or not choice:  # Default to voice if empty or '1'
+                    command = self.listen_command()
+                else:
+                    print(json.dumps({"success": False, "error": "Invalid choice. Please try again."}))
+                    continue
+                
+                if not command:
+                    continue
+                    
+                classification = self.classify_command(command)
+                if classification["type"] == "EXIT":
+                    print(json.dumps({"success": True, "result": "Goodbye!"}))
+                    break
+                elif classification["type"] == "ERROR":
+                    print(json.dumps({"success": False, "error": classification["error"]}))
+                    continue
+                
+                result = self.route_command(classification, command)
+                # Ensure result is always JSON
+                if result is None:
+                    result = {"success": False, "error": "Command processing failed"}
+                print(json.dumps(result))
+                
+            except KeyboardInterrupt:
                 print(json.dumps({"success": True, "result": "Goodbye!"}))
                 break
-            elif classification["type"] == "ERROR":
-                print(json.dumps({"success": False, "error": classification["error"]}))
-                continue
-            
-            result = self.route_command(classification, command)
-            # Ensure result is always JSON
-            if result is None:
-                result = {"success": False, "error": "Command processing failed"}
-            print(json.dumps(result))
+            except Exception as e:
+                print(json.dumps({"success": False, "error": str(e)}))
 
 def main():
     classifier = CommandClassifier()
