@@ -1,15 +1,17 @@
 import json
 import sys
 import os
-from .file_operations.embeddings_manager import EmbeddingsManager
-from .file_operations.file_manager import FileManager
-from .file_operations.llm_manager import LLMManager
+
+
 
 from typing import Dict, Any
 import platform
 from pathlib import Path
 
 GROQ_API_KEY="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"
+from .file_operations.llm_manager import LLMManager
+from .file_operations.embeddings_manager import EmbeddingsManager
+from .file_operations.file_manager import FileManager
 
 class FileAssistant:
     def __init__(self, silent=False):

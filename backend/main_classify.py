@@ -1,3 +1,4 @@
+# Modified main_classify.py to support browser operations with voice commands
 import speech_recognition as sr
 import json
 from groq import Groq
@@ -14,8 +15,13 @@ class CommandClassifier:
         # Load embeddings at startup
         print("Initializing system...")
         from file_opr.main import FileAssistant
-        self.file_assistant = FileAssistant(silent=True)  # Add silent mode
-        print("Ready!")
+        self.file_assistant = FileAssistant(silent=True)
+        
+        # Initialize the browser assistant
+        from browser_operations.main import BrowserAssistant
+        self.browser_assistant = BrowserAssistant()
+        
+        print("Ready! Speak a command...")
         
         self.system_prompt = """You are a command classifier. Analyze the user's command and return ONLY a valid JSON object.
 
@@ -42,9 +48,19 @@ Example response:
     "command": "delete my documents"
 }
 
+Example command: "search for weather in New York"
+Example response:
+{
+    "type": "BROWSER_OPERATION",
+    "confidence": 95,
+    "keywords": ["search", "browser", "weather"],
+    "command": "search for weather in New York"
+}
+
 Classify commands into:
 1. FILE_OPERATION - for file management tasks (create, delete, move, copy, search files)
-2. SYSTEM_CONTROL - for system settings (brightness, volume, wifi, bluetooth, battery)"""
+2. SYSTEM_CONTROL - for system settings (brightness, volume, wifi, bluetooth, battery)
+3. BROWSER_OPERATION - for browser tasks (open websites, search, email, YouTube, social media)"""
 
     def listen_command(self):
         """Listen for voice command and convert to text"""
@@ -53,9 +69,10 @@ Classify commands into:
                 print("Listening...")
                 audio = self.recognizer.listen(source)
                 text = self.recognizer.recognize_google(audio)
+                print(f"Recognized: {text}")
                 return text
         except Exception as e:
-            print("Error: Could not understand audio")
+            print(f"Error: Could not understand audio - {str(e)}")
             return None
 
     def classify_command(self, command: str):
@@ -102,10 +119,20 @@ Classify commands into:
                 from system_controls.main import process_command
                 return process_command(original_command)
                 
+            elif classification["type"] == "BROWSER_OPERATION":
+                # Directly use the original command instead of parsing with another LLM
+                return self.browser_assistant.process_command(original_command)
+                            
         except Exception as e:
             return {"success": False, "error": str(e)}
 
     def main_loop(self):
+        """Main loop for voice command processing"""
+        print("\n=== Voice Command Assistant ===")
+        print("Control your system with voice commands.")
+        print("Say 'exit' or 'quit' to end the session.\n")
+        
+        
         while True:
             command = self.listen_command()
             if not command:
@@ -114,6 +141,9 @@ Classify commands into:
             classification = self.classify_command(command)
             if classification["type"] == "EXIT":
                 print(json.dumps({"success": True, "result": "Goodbye!"}))
+                # Close browser when exiting
+                if hasattr(self, 'browser_assistant'):
+                    self.browser_assistant.browser_ops.close()
                 break
             elif classification["type"] == "ERROR":
                 print(json.dumps({"success": False, "error": classification["error"]}))
@@ -123,11 +153,29 @@ Classify commands into:
             # Ensure result is always JSON
             if result is None:
                 result = {"success": False, "error": "Command processing failed"}
-            print(json.dumps(result))
+            
+            # Pretty print the result
+            if result["success"]:
+                print(f"✅ {result.get('message', 'Command executed successfully')}")
+            else:
+                print(f"❌ {result.get('error', 'Unknown error occurred')}")
+
+    def __del__(self):
+        """Clean up resources on object destruction"""
+        # Close browser if it exists
+        if hasattr(self, 'browser_assistant') and hasattr(self.browser_assistant, 'browser_ops'):
+            self.browser_assistant.browser_ops.close()
 
 def main():
-    classifier = CommandClassifier()
-    classifier.main_loop()
+    try:
+        classifier = CommandClassifier()
+        classifier.main_loop()
+    except KeyboardInterrupt:
+        print("\nDetected Ctrl+C. Exiting...")
+        sys.exit(0)
+    except Exception as e:
+        print(f"Fatal error: {str(e)}")
+        sys.exit(1)
 
 if __name__ == "__main__":
-    main() 
+    main()
