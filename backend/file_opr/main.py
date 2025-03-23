@@ -20,16 +20,15 @@ class FileAssistant:
         self._initialize_system()
 
     def _initialize_system(self):
-        """Initialize the system by scanning directories and creating embeddings"""
-        if not self.silent:
-            print("Checking system state...")
-        
+        """Initialize the system by loading existing embeddings or creating new ones if they don't exist"""
         if self.embeddings_manager.load_embeddings():
-            self._update_embeddings()
+            return True
         else:
+            # Create new embeddings only if they don't exist
             directory_tree = self.file_manager.scan_system()
             self.file_manager.save_directory_tree(directory_tree)
             self.embeddings_manager.create_embeddings(directory_tree)
+            return True
 
     def process_command(self, command: str) -> Dict:
         """Process a user command"""
@@ -76,30 +75,11 @@ class FileAssistant:
             exec(command, namespace)
             return True
         except Exception as e:
-            print(f"Error executing command: {e}")
             return False
-
-    def _update_embeddings(self):
-        """Update embeddings with any new paths"""
-        try:
-            print("\n Checking for directory structure changes...")
-            # Scan for new paths
-            directory_tree = self.file_manager.scan_system()
-            
-            # Save updated directory tree
-            self.file_manager.save_directory_tree(directory_tree)
-            
-            # Create new embeddings
-            self.embeddings_manager.create_embeddings(directory_tree)
-            print("✅ Directory structure is up to date.")
-        except Exception as e:
-            print(f"❌ Error updating embeddings: {str(e)}")
 
 def main():
     assistant = FileAssistant()
-    print("\n File Assistant is ready! Type 'exit' to quit.")
-    print("\nAvailable commands:")
-    print("- File operations: create, move, copy, delete files and folders")
+    print("\nFile Assistant is ready! Type 'exit' to quit.")
     
     while True:
         try:
@@ -107,11 +87,12 @@ def main():
             if command.lower() == 'exit':
                 break
             if command:
-                assistant.process_command(command)
+                result = assistant.process_command(command)
+                print(json.dumps(result))
         except KeyboardInterrupt:
             break
         except Exception as e:
-            print(f"❌ Error: {str(e)}")
+            print(json.dumps({"success": False, "error": str(e)}))
 
 if __name__ == "__main__":
     main() 

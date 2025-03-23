@@ -8,7 +8,6 @@ class FileManager:
     def __init__(self):
         self.directory_tree = {}
         self.ignored_patterns = [
-          
             '.git', '__pycache__', 'node_modules', 'venv',
             '*.pyc', '*.pyo', '*.pyd', '*.so', '*.dll',
             '.env', '.vscode', '.idea', '*.log',
@@ -16,7 +15,7 @@ class FileManager:
             '*.tmp', '*.temp', '*.swp', '*.swo',
             'Thumbs.db', '.DS_Store', '*.cache',
             'System Volume Information', '$Recycle.Bin', 'Recovery',
-             'Windows',
+            'Windows',
             'AppData', 'Local', 'Roaming', 'Temp',
             'node_modules', 'vendor', 'packages',
             'node_modules', 'bower_components',
@@ -34,9 +33,7 @@ class FileManager:
             'Projects', 'Work', 'Personal'
         ]
         
-
         self.home_dir = str(Path.home())
-        print(f"📁 User home directory: {self.home_dir}")
 
     def get_system_drives(self) -> List[str]:
         """Get user's home directory"""
@@ -44,7 +41,6 @@ class FileManager:
 
     def is_in_user_directory(self, path: str) -> bool:
         """Check if a path is within any user directory"""
-       
         path_lower = path.lower()
         return any(user_dir.lower() in path_lower for user_dir in self.user_dirs)
 
@@ -87,7 +83,6 @@ class FileManager:
         """Scan the user's home directory for directory structure"""
         all_trees = {}
         for drive in self.get_system_drives():
-            print(f"Scanning directory: {drive}")
             drive_tree = self.get_directory_tree(drive)
             all_trees[drive] = drive_tree
         return all_trees
@@ -97,9 +92,8 @@ class FileManager:
         try:
             with open(filename, "w", encoding='utf-8') as f:
                 json.dump(tree, f, indent=2)
-            print(f"✅ Directory structure saved to {filename}")
         except Exception as e:
-            print(f"Error saving directory tree: {e}")
+            print(json.dumps({"success": False, "error": f"Error saving directory tree: {str(e)}"}))
 
     def load_directory_tree(self, filename: str = "directory_tree.json") -> Dict:
         """Load directory tree from a JSON file"""
@@ -107,7 +101,7 @@ class FileManager:
             with open(filename, "r", encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
-            print(f"Error loading directory tree: {e}")
+            print(json.dumps({"success": False, "error": f"Error loading directory tree: {str(e)}"}))
             return {}
 
     def create_file(self, path: str, content: str = "") -> bool:
@@ -118,7 +112,7 @@ class FileManager:
                 f.write(content)
             return True
         except Exception as e:
-            print(f"Error creating file {path}: {e}")
+            print(json.dumps({"success": False, "error": f"Error creating file {path}: {str(e)}"}))
             return False
 
     def read_file(self, path: str) -> str:
@@ -127,7 +121,7 @@ class FileManager:
             with open(path, 'r', encoding='utf-8') as f:
                 return f.read()
         except Exception as e:
-            print(f"Error reading file {path}: {e}")
+            print(json.dumps({"success": False, "error": f"Error reading file {path}: {str(e)}"}))
             return ""
 
     def delete_file(self, path: str) -> bool:
@@ -136,5 +130,5 @@ class FileManager:
             os.remove(path)
             return True
         except Exception as e:
-            print(f"Error deleting file {path}: {e}")
+            print(json.dumps({"success": False, "error": f"Error deleting file {path}: {str(e)}"}))
             return False 

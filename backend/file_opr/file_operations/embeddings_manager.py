@@ -17,7 +17,7 @@ class EmbeddingsManager:
 
     def create_embeddings(self, directory_tree: Dict) -> None:
         """Create embeddings for all paths in the directory tree"""
-        print("🔄 Creating embeddings for directory structure...")
+        print("Creating embeddings for directory structure...")
         
         # Extract all paths from the directory tree
         self.paths = []
@@ -37,7 +37,7 @@ class EmbeddingsManager:
                     file_path = os.path.join(full_path, file_name)
                     self.paths.append(file_path)
 
-        print(f"✅ Found {len(self.paths)} paths. Generating embeddings...")
+        print(f"Found {len(self.paths)} paths. Generating embeddings...")
         
         # Process paths in batches
         all_embeddings = []
@@ -59,7 +59,7 @@ class EmbeddingsManager:
         with open(self.paths_file, 'w', encoding='utf-8') as f:
             json.dump(self.paths, f, indent=2)
         
-        print("✅ Embeddings saved successfully!")
+        print("Embeddings saved successfully!")
 
     def load_embeddings(self) -> bool:
         """Load existing embeddings from disk"""
@@ -79,7 +79,7 @@ class EmbeddingsManager:
         """Search for paths similar to the query"""
         if self.index is None:
             if not self.load_embeddings():
-                print("⚠️ No embeddings found. Please create embeddings first.")
+                print("No embeddings found. Please create embeddings first.")
                 return []
 
         # Generate embedding for the query
@@ -100,7 +100,7 @@ class EmbeddingsManager:
         """Update embeddings with new paths"""
         if self.index is None:
             if not self.load_embeddings():
-                print("⚠️ No existing embeddings found. Creating new ones...")
+                print(" No existing embeddings found. Creating new ones...")
                 return
 
         # Generate embeddings for new paths in batches
@@ -124,4 +124,4 @@ class EmbeddingsManager:
         with open(self.paths_file, 'w', encoding='utf-8') as f:
             json.dump(self.paths, f, indent=2)
         
-        print("✅ Updated embeddings with new paths")
+        print("Updated embeddings with new paths")
