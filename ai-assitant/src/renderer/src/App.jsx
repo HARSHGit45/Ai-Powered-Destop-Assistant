@@ -1,14 +1,14 @@
 import Home from './components/Home'
-import Sidebar from './components/Sidebar'
-import { useState } from 'react'
+import Stocks from './components/Stocks'
+import Weather from './components/Weather'
 
 const App = () => {
-  const [completedTasks, setCompletedTasks] = useState([]) // Ensure state is initialized
 
   return (
-    <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] font-winky">
+    <div className="relative min-h-screen w-full flex flex-col [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] ">
       <Home />
-      <Sidebar completedTasks={completedTasks} setCompletedTasks={setCompletedTasks} />
+      <Weather />
+      <Stocks />
     </div>
   )
 }

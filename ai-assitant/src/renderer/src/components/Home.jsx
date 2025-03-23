@@ -84,7 +84,6 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(checkDeadlines, 60000);
 
-    // Initial check on component mount
     checkDeadlines()
 
     return () => {
@@ -235,7 +234,7 @@ const Home = () => {
   const completedTasks = useMemo(() => tasks.filter((task) => task.completed), [tasks])
 
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex min-h-screen ">
       {/* Main content area */}
       <div className="flex-1 flex flex-col gap-8 items-center justify-center py-8 px-4">
         <motion.div
@@ -265,7 +264,7 @@ const Home = () => {
                   variants={letterVariants}
                   initial="hidden"
                   animate="visible"
-                  className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-clip-text font-bold bg-gradient-to-b from-gray-600 via-white to-gray-300 inline-block"
+                  className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-clip-text font-bold bg-gradient-to-b from-gray-600 via-white to-gray-300 inline-block"
                   style={{ textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}
                 >
                   {char === ' ' ? '\u00A0' : char}
