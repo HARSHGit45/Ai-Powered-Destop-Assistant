@@ -17,34 +17,18 @@ class CommandClassifier:
         self.file_assistant = FileAssistant(silent=True)  # Add silent mode
         print("Ready!")
         
-        self.system_prompt = """You are a command classifier. Analyze the user's command and return ONLY a valid JSON object.
-
-Rules:
-1. Always return valid JSON
-2. No explanations or additional text
-3. Only return the JSON object
-
-Example command: "volume 100%"
-Example response:
-{
-    "type": "SYSTEM_CONTROL",
-    "confidence": 95,
-    "keywords": ["volume", "audio", "sound"],
-    "command": "volume 100%"
-}
-
-Example command: "delete my documents"
-Example response:
-{
-    "type": "FILE_OPERATION",
-    "confidence": 90,
-    "keywords": ["delete", "remove", "documents"],
-    "command": "delete my documents"
-}
-
-Classify commands into:
-1. FILE_OPERATION - for file management tasks (create, delete, move, copy, search files)
-2. SYSTEM_CONTROL - for system settings (brightness, volume, wifi, bluetooth, battery)"""
+        self.system_prompt = """You are a command classifier. Analyze the user's command and determine if it's:
+        1. FILE_OPERATION - for file management tasks (create, delete, move, copy, search files)
+        2. SYSTEM_CONTROL - for system settings (brightness, volume, wifi, bluetooth, battery)
+        3. APP_CONTROL - for application control (open, close, switch between apps)
+        
+        Return ONLY a JSON with these fields:
+        {
+            "type": "FILE_OPERATION or SYSTEM_CONTROL or APP_CONTROL",
+            "confidence": "0-100",
+            "keywords": ["list of relevant keywords"],
+            "command": "original command"
+        }"""
 
     def listen_command(self):
         """Listen for voice command and convert to text"""
@@ -70,20 +54,80 @@ Classify commands into:
             }
 
         try:
+            # Make the system prompt more explicit about JSON formatting
+            system_prompt = """You are a command classifier. Return ONLY valid JSON, no other text.
+
+Example commands and responses:
+Input: "open chrome"
+{
+    "type": "APP_CONTROL",
+    "confidence": 95,
+    "keywords": ["open", "launch", "chrome", "browser"],
+    "command": "open chrome"
+}
+
+Input: "increase volume"
+{
+    "type": "SYSTEM_CONTROL",
+    "confidence": 90,
+    "keywords": ["volume", "increase", "audio"],
+    "command": "increase volume"
+}
+
+Input: "delete file from desktop"
+{
+    "type": "FILE_OPERATION",
+    "confidence": 85,
+    "keywords": ["delete", "remove", "file", "desktop"],
+    "command": "delete file from desktop"
+}
+
+Rules:
+1. ONLY return valid JSON
+2. No explanations or additional text
+3. Type must be one of: FILE_OPERATION, SYSTEM_CONTROL, APP_CONTROL
+4. Confidence must be a number between 0-100
+5. Keywords must be relevant to the command
+6. Command must be the original input"""
+
             completion = self.client.chat.completions.create(
                 model="llama-3.3-70b-versatile",
                 messages=[
-                    {"role": "system", "content": self.system_prompt},
-                    {"role": "user", "content": command}
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f"Classify this command: {command}"}
                 ],
                 temperature=0.1,
                 max_tokens=500
             )
             
-            result = json.loads(completion.choices[0].message.content)
-            return result
+            try:
+                result = json.loads(completion.choices[0].message.content)
+                return result
+            except json.JSONDecodeError:
+                # Fallback classification based on keywords
+                command_lower = command.lower()
+                if any(word in command_lower for word in ['open', 'launch', 'start', 'run', 'close', 'switch']):
+                    return {
+                        "type": "APP_CONTROL",
+                        "confidence": 70,
+                        "keywords": ["application", "control"],
+                        "command": command
+                    }
+                elif any(word in command_lower for word in ['volume', 'brightness', 'wifi', 'bluetooth']):
+                    return {
+                        "type": "SYSTEM_CONTROL",
+                        "confidence": 70,
+                        "keywords": ["system", "settings"],
+                        "command": command
+                    }
+                else:
+                    return {
+                        "type": "FILE_OPERATION",
+                        "confidence": 70,
+                        "keywords": ["file", "operation"],
+                        "command": command
+                    }
         except Exception as e:
-            # Return JSON even for errors
             return {
                 "type": "ERROR",
                 "confidence": 0,
@@ -96,14 +140,24 @@ Classify commands into:
         """Route the command to appropriate handler"""
         try:
             if classification["type"] == "FILE_OPERATION":
-                return self.file_assistant.process_command(original_command)
+                from file_opr.main import FileAssistant
+                assistant = FileAssistant()
+                return assistant.process_command(original_command)
                 
             elif classification["type"] == "SYSTEM_CONTROL":
                 from system_controls.main import process_command
                 return process_command(original_command)
                 
+            elif classification["type"] == "APP_CONTROL":
+                from app_controls.main import AppController
+                controller = AppController()
+                return controller.process_command(original_command)
+                
         except Exception as e:
-            return {"success": False, "error": str(e)}
+            return {
+                "success": False,
+                "error": str(e)
+            }
 
     def main_loop(self):
         while True:

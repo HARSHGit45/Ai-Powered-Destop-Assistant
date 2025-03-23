@@ -16,7 +16,7 @@ class FileManager:
             '*.tmp', '*.temp', '*.swp', '*.swo',
             'Thumbs.db', '.DS_Store', '*.cache',
             'System Volume Information', '$Recycle.Bin', 'Recovery',
-            'Program Files', 'Program Files (x86)', 'Windows',
+             'Windows',
             'AppData', 'Local', 'Roaming', 'Temp',
             'node_modules', 'vendor', 'packages',
             'node_modules', 'bower_components',
