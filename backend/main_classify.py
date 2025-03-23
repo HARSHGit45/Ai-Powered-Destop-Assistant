@@ -60,12 +60,21 @@ Classify commands into:
 
     def classify_command(self, command: str):
         """Classify the command using LLM"""
+        # Handle exit command specially
+        if command.lower() in ['exit', 'quit', 'bye', 'thank you']:
+            return {
+                "type": "EXIT",
+                "confidence": 100,
+                "keywords": ["exit"],
+                "command": command
+            }
+
         try:
             completion = self.client.chat.completions.create(
                 model="llama-3.3-70b-versatile",
                 messages=[
                     {"role": "system", "content": self.system_prompt},
-                    {"role": "user", "content": f"Classify this command: {command}"}
+                    {"role": "user", "content": command}
                 ],
                 temperature=0.1,
                 max_tokens=500
@@ -74,9 +83,14 @@ Classify commands into:
             result = json.loads(completion.choices[0].message.content)
             return result
         except Exception as e:
-            print(f"Error classifying command: {e}")
-            print(f"Raw LLM response: {completion.choices[0].message.content}")  # Debug line
-            return None
+            # Return JSON even for errors
+            return {
+                "type": "ERROR",
+                "confidence": 0,
+                "keywords": ["error"],
+                "command": command,
+                "error": str(e)
+            }
 
     def route_command(self, classification, original_command):
         """Route the command to appropriate handler"""
@@ -98,15 +112,18 @@ Classify commands into:
                 continue
                 
             classification = self.classify_command(command)
-            if not classification:
-                print("Failed to process command")
+            if classification["type"] == "EXIT":
+                print(json.dumps({"success": True, "result": "Goodbye!"}))
+                break
+            elif classification["type"] == "ERROR":
+                print(json.dumps({"success": False, "error": classification["error"]}))
                 continue
             
             result = self.route_command(classification, command)
-            if result and result.get("success"):
-                print(result.get("result", "Command executed successfully"))
-            else:
-                print(result.get("error", "Failed to execute command"))
+            # Ensure result is always JSON
+            if result is None:
+                result = {"success": False, "error": "Command processing failed"}
+            print(json.dumps(result))
 
 def main():
     classifier = CommandClassifier()
