@@ -62,8 +62,9 @@ class CommandClassifier:
     def accept_command(self, command: str = None):
         """Accept text command from user input"""
         try:
-            command = input("Enter your command: ").strip()
-            return command if command else None
+            if command:
+                return command.strip()
+            return None
         except Exception:
             return None
 
@@ -185,50 +186,62 @@ Rules:
             }
 
     def main_loop(self):
-        print("\nWelcome! Choose input method:")
-        print("1. Voice (press Enter)")
-        print("2. Text (type 'text' and press Enter)")
-        print("3. Exit (type 'exit' and press Enter)")
-        
+        """Main loop to process commands from stdin"""
         while True:
             try:
-                choice = input("\nEnter your choice: ").strip().lower()
-                
-                if choice == 'exit':
-                    print(json.dumps({"success": True, "result": "Goodbye!"}))
-                    break
-                
-                # Get command based on input method
-                if choice == 'text' or choice == '2':
-                    command = self.accept_command()
-                elif choice == '1' or not choice:  # Default to voice if empty or '1'
-                    command = self.listen_command()
-                else:
-                    print(json.dumps({"success": False, "error": "Invalid choice. Please try again."}))
+                # Read JSON input from stdin
+                input_line = sys.stdin.readline()
+                if not input_line:
                     continue
+                    
+                # Parse the JSON input
+                input_data = json.loads(input_line)
+                command_type = input_data.get('type')
+                command = input_data.get('command')
                 
                 if not command:
                     continue
-                    
-                classification = self.classify_command(command)
-                if classification["type"] == "EXIT":
-                    print(json.dumps({"success": True, "result": "Goodbye!"}))
-                    break
-                elif classification["type"] == "ERROR":
-                    print(json.dumps({"success": False, "error": classification["error"]}))
+                
+                # Process command based on type
+                if command_type == 'text':
+                    command_text = self.accept_command(command)
+                elif command_type == 'voice':
+                    command_text = self.listen_command()
+                else:
+                    print("Error: Invalid command type")
                     continue
                 
-                result = self.route_command(classification, command)
-                # Ensure result is always JSON
-                if result is None:
-                    result = {"success": False, "error": "Command processing failed"}
-                print(json.dumps(result))
+                if not command_text:
+                    continue
+                    
+                # Classify and route the command
+                classification = self.classify_command(command_text)
+                if classification["type"] == "EXIT":
+                    print("Goodbye!")
+                    break
+                elif classification["type"] == "ERROR":
+                    print(f"Error: {classification['error']}")
+                    continue
+                
+                # Route the command and get result
+                result = self.route_command(classification, command_text)
+                
+                # Print result to terminal
+                if result.get("success"):
+                    print(f"Success: {result.get('result', 'Command executed successfully')}")
+                else:
+                    print(f"Error: {result.get('error', 'Unknown error')}")
                 
             except KeyboardInterrupt:
-                print(json.dumps({"success": True, "result": "Goodbye!"}))
+                print("Goodbye!")
                 break
+            except json.JSONDecodeError as e:
+                print(f"Error: Invalid JSON input - {str(e)}")
             except Exception as e:
-                print(json.dumps({"success": False, "error": str(e)}))
+                print(f"Error: {str(e)}")
+            
+            # Flush stdout to ensure output is sent
+            sys.stdout.flush()
 
 def main():
     classifier = CommandClassifier()

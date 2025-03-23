@@ -2,10 +2,53 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { spawn } from 'child_process'
+
+let pythonProcess = null;
+let mainWindow = null;
+
+function initializePythonProcess() {
+  if (pythonProcess) {
+    return; // Already initialized
+  }
+
+  const scriptPath = join(__dirname, '../../../backend/main_classify.py')
+  pythonProcess = spawn('python', [scriptPath], {
+    stdio: ['pipe', 'pipe', 'pipe']
+  })
+
+  pythonProcess.stdout.on('data', (data) => {
+    try {
+      // Only send to renderer if it's a command result
+      if (data.toString().includes('"success":')) {
+        const result = JSON.parse(data.toString());
+        if (mainWindow && !mainWindow.isDestroyed()) {
+          mainWindow.webContents.send('command-result', result);
+        }
+      }
+    } catch (error) {
+      console.error('Error parsing Python output:', error);
+    }
+  });
+
+  pythonProcess.stderr.on('data', (data) => {
+    console.error('Python Error:', data.toString());
+  });
+
+  pythonProcess.on('close', (code) => {
+    console.log(`Python process exited with code ${code}`)
+    pythonProcess = null
+  })
+
+  pythonProcess.on('error', (error) => {
+    console.error('Failed to start Python process:', error)
+    pythonProcess = null
+  })
+}
 
 function createWindow() {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 900,
     height: 670,
     show: false,
@@ -13,13 +56,16 @@ function createWindow() {
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
-      sandbox: true,
-      contextIsolation: true
+      sandbox: false,
+      contextIsolation: true,
+      nodeIntegration: true
     }
   })
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
+    // Initialize Python process after window is shown
+    initializePythonProcess()
   })
 
   mainWindow.webContents.setWindowOpenHandler((details) => {
@@ -50,8 +96,24 @@ app.whenReady().then(() => {
     optimizer.watchWindowShortcuts(window)
   })
 
-  // IPC test
-  ipcMain.on('ping', () => console.log('pong'))
+  // Handle text commands
+  ipcMain.on('process-command', (_, data) => {
+    if (!pythonProcess) {
+      initializePythonProcess()
+    }
+    
+    if (pythonProcess && pythonProcess.stdin.writable) {
+      const commandData = JSON.stringify(data) + '\n'
+      pythonProcess.stdin.write(commandData)
+    } else {
+      if (mainWindow && !mainWindow.isDestroyed()) {
+        mainWindow.webContents.send('command-result', {
+          success: false,
+          error: 'Python process not ready'
+        })
+      }
+    }
+  })
 
   createWindow()
 
@@ -67,6 +129,10 @@ app.whenReady().then(() => {
 // explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
+    if (pythonProcess) {
+      pythonProcess.kill()
+      pythonProcess = null
+    }
     app.quit()
   }
 })

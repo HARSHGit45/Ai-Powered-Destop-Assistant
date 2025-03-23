@@ -5,19 +5,23 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from typing import List, Dict, Tuple
 from tqdm import tqdm
+from pathlib import Path
+import sys
 
 class EmbeddingsManager:
     def __init__(self):
         self.model = SentenceTransformer("all-MiniLM-L6-v2")
         self.index = None
         self.paths = []
-        self.index_file = "path_index.faiss"
-        self.paths_file = "path_list.json"
+        # Use global paths for embeddings files
+        self.base_dir = Path(__file__).parent.parent.parent
+        self.index_file = str(self.base_dir / "path_index.faiss")
+        self.paths_file = str(self.base_dir / "path_list.json")
         self.batch_size = 10000  # Process 10k paths at a time
 
     def create_embeddings(self, directory_tree: Dict) -> None:
         """Create embeddings for all paths in the directory tree"""
-        print("Creating embeddings for directory structure...")
+        print(json.dumps({"status": "info", "message": "Creating embeddings for directory structure..."}))
         
         # Extract all paths from the directory tree
         self.paths = []
@@ -37,14 +41,16 @@ class EmbeddingsManager:
                     file_path = os.path.join(full_path, file_name)
                     self.paths.append(file_path)
 
-        print(f"Found {len(self.paths)} paths. Generating embeddings...")
+        print(json.dumps({"status": "info", "message": f"Found {len(self.paths)} paths. Generating embeddings..."}))
         
         # Process paths in batches
         all_embeddings = []
-        for i in tqdm(range(0, len(self.paths), self.batch_size), desc="Generating embeddings"):
-            batch_paths = self.paths[i:i + self.batch_size]
-            batch_embeddings = self.model.encode(batch_paths)
-            all_embeddings.append(batch_embeddings)
+        # Suppress tqdm output by redirecting to devnull
+        with open(os.devnull, 'w') as devnull:
+            for i in tqdm(range(0, len(self.paths), self.batch_size), desc="Generating embeddings", file=devnull):
+                batch_paths = self.paths[i:i + self.batch_size]
+                batch_embeddings = self.model.encode(batch_paths)
+                all_embeddings.append(batch_embeddings)
         
         # Combine all embeddings
         path_embeddings = np.vstack(all_embeddings)
@@ -59,7 +65,7 @@ class EmbeddingsManager:
         with open(self.paths_file, 'w', encoding='utf-8') as f:
             json.dump(self.paths, f, indent=2)
         
-        print("Embeddings saved successfully!")
+        print(json.dumps({"status": "success", "message": "Embeddings saved successfully!"}))
 
     def load_embeddings(self) -> bool:
         """Load existing embeddings from disk"""
@@ -68,18 +74,18 @@ class EmbeddingsManager:
                 self.index = faiss.read_index(self.index_file)
                 with open(self.paths_file, 'r', encoding='utf-8') as f:
                     self.paths = json.load(f)
-                print("✅ Loaded existing embeddings")
+                print(json.dumps({"status": "success", "message": "Loaded existing embeddings"}))
                 return True
             return False
         except Exception as e:
-            print(f"Error loading embeddings: {e}")
+            print(json.dumps({"status": "error", "message": f"Error loading embeddings: {str(e)}"}))
             return False
 
     def search_paths(self, query: str, top_k: int = 5) -> List[Tuple[str, float]]:
         """Search for paths similar to the query"""
         if self.index is None:
             if not self.load_embeddings():
-                print("No embeddings found. Please create embeddings first.")
+                print(json.dumps({"status": "error", "message": "No embeddings found. Please create embeddings first."}))
                 return []
 
         # Generate embedding for the query
@@ -100,15 +106,17 @@ class EmbeddingsManager:
         """Update embeddings with new paths"""
         if self.index is None:
             if not self.load_embeddings():
-                print(" No existing embeddings found. Creating new ones...")
+                print(json.dumps({"status": "error", "message": "No existing embeddings found. Creating new ones..."}))
                 return
 
         # Generate embeddings for new paths in batches
         new_embeddings = []
-        for i in tqdm(range(0, len(new_paths), self.batch_size), desc="Generating new embeddings"):
-            batch_paths = new_paths[i:i + self.batch_size]
-            batch_embeddings = self.model.encode(batch_paths)
-            new_embeddings.append(batch_embeddings)
+        # Suppress tqdm output by redirecting to devnull
+        with open(os.devnull, 'w') as devnull:
+            for i in tqdm(range(0, len(new_paths), self.batch_size), desc="Generating new embeddings", file=devnull):
+                batch_paths = new_paths[i:i + self.batch_size]
+                batch_embeddings = self.model.encode(batch_paths)
+                new_embeddings.append(batch_embeddings)
         
         # Combine new embeddings
         new_embeddings = np.vstack(new_embeddings)
@@ -124,4 +132,4 @@ class EmbeddingsManager:
         with open(self.paths_file, 'w', encoding='utf-8') as f:
             json.dump(self.paths, f, indent=2)
         
-        print("Updated embeddings with new paths")
+        print(json.dumps({"status": "success", "message": "Updated embeddings with new paths"}))

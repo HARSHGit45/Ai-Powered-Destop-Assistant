@@ -103,10 +103,37 @@ const Home = () => {
 
   const handleSend = () => {
     if (inputText.trim()) {
-      console.log('Message sent:', inputText)
-      setInputText('')
+      // Send command to main process for classification
+      window.api.processCommand({
+        type: 'text',
+        command: inputText.trim()
+      });
+
+      // Clear input after sending
+      setInputText('');
     }
   }
+
+  // Listen for command results
+  useEffect(() => {
+    let lastSpokenText = '';
+    const handleCommandResult = (result) => {
+      if (!result) return; // Skip if result is undefined
+      
+      if (result.success && result.result && result.result !== lastSpokenText) {
+        // Only speak if we have a valid result and it's different from the last spoken text
+        lastSpokenText = result.result;
+        speak(result.result);
+      } else if (result.error && result.error !== 'undefined' && result.error !== lastSpokenText) {
+        // Only speak error if it's not undefined and different from the last spoken text
+        lastSpokenText = result.error;
+        speak(`Error: ${result.error}`);
+      }
+    };
+
+    // Subscribe to command results
+    window.api.onCommandResult(handleCommandResult);
+  }, []);
 
   const handleTaskSelect = (task) => {
     console.log(`Selected task: ${task}`)
